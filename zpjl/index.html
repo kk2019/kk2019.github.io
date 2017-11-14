@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-title" content="Solitaire FRVR">
+	<meta name="HandheldFriendly" content="true" />	
+	<meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+
+	<meta name="theme-color" content="#01450d">
+
+	<title>纸牌接龙</title>
+	<style>
+		*{
+			-webkit-touch-callout: none;
+		    -webkit-user-select: none;
+		    -khtml-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		}
+
+		body {
+			background-color: #000000;
+			overflow:hidden;
+			position:fixed;
+			-webkit-font-smoothing: antialiased;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			border:0px;padding:0px;margin:0px;
+			width:100%;
+			height:100%;
+		}
+
+		
+		canvas{
+			position: fixed;
+			top:0px;
+			left:0px;
+			width:100%;
+			height:100%;
+			background-color:#000000
+		}
+
+		@-ms-viewport{width:100%}
+
+		content{
+			background-color:#ffffff;
+			display: block;
+			padding:20px;
+			height:100%;
+			overflow:scroll;
+		}
+
+		content metadata{
+			float:right;
+			margin-left:10px;
+			text-align:center;
+		}
+
+		h1{
+			margin:0px;
+			font-weight:100;
+			font-size:50px;
+		}
+		a{
+			line-height:2em;
+		}
+		h3{
+			margin-bottom:0px;
+		}
+
+		@-ms-keyframes w{0%{-ms-transform:rotate(3deg);}50%{-ms-transform:rotate(-3deg);}100%{-ms-transform:rotate(3deg);}}
+		@-moz-keyframes w{0%{-moz-transform:rotate(3deg);}50%{-moz-transform:rotate(-3deg);}100%{-moz-transform:rotate(3deg);}}
+		@-webkit-keyframes w{0%{-webkit-transform:rotate(3deg);}50%{-webkit-transform:rotate(-3deg);}100%{-webkit-transform:rotate(3deg);}}
+		@keyframes w{0%{transform:rotate(3deg);}50%{transform:rotate(-3deg);}100%{transform:rotate(3deg);}}
+		.w {-ms-animation:w .3s 2;-moz-animation:w .3s 2;-webkit-animation:w .3s 2;animation:w .3s 2;}
+
+	</style>
+	</head>
+	<body>
+		<div id="overlay" style="position:absolute;z-index:3;left:50%;margin-left:-50px;visibility:hidden;bottom:5px"></div>
+		<canvas id="gameCanvas"></canvas>
+		<div id="fb-root"></div>
+ 		 
+<script language="javascript" type="text/javascript" src="js/play68.js"></script>
+ 		<script>
+ 			(function(){play68_init();})();
+ 			var initTime = 1*new Date();
+		</script>
+		<script src="v1444404351/game.min.js"></script>
+	</body>
+</html>

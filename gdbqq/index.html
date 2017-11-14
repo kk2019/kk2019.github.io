@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>PC蛋蛋</title>
+   
+	<script src="zepto.min.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+
+    <style>
+        body {
+            text-align: center;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        html {
+            -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+            overflow: hidden;
+        }
+
+         canvas {
+            display: block;
+            position: absolute;
+            margin: 0 auto;
+            padding: 0;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript" src="js/play68_sdk.js"></script>  
+<script language="javascript" type="text/javascript" src="js/play68.js"></script>
+<script type="text/javascript">
+	(function (){updateShare(0);})();
+</script>
+<div style="position:relative;" id="gameDiv"></div>
+<script>var document_class = "Main";</script><!--这部分内容在编译时会被替换，要修改文档类，请到工程目录下的egretProperties.json内编辑。-->
+<!--This part will be replaced during compiling, and to modify the document class, please go to the project directory and edit in the file of egretProperties. Jsonr-->
+<script src="launcher/egret_require.js"></script>
+<script src="launcher/egret_loader.js"></script>
+<script src="launcher/game-min.js"></script>
+<script src="meiriq.egret.common2015.js"></script>
+
+<script type="text/javascript">
+var config_info         = {"is_debug":false,"share_button":1,"more_button":1,"permit_start":true,"page_source":"autobox","is_ad":true,"downloadbutton_stat_url":"","is_weixin":false,"load_stat_url":"","weixin_rank":false,"protocolShare":true,"protocolPutscore":true,"more_link":"","post_score_url":"","weixin_config_url":""};
+</script>
+
+<script type="text/javascript">
+var base_path = "";
+var gamename_en = "egretqiuqiu";
+</script>
+<script type="text/javascript">
+var buttoncount=0,buttonLayoutConfig=[],_gameHonour=null;
+buttonLayoutConfig=config_info.share_button?config_info.more_button?["restart","share","more"]:["restart","share"]:config_info.more_button?["restart","more"]:["restart"];
+var meiriq_game=meiriq.CommonComponent.instance.config_common({
+    name: gamename_en,
+    resourceCDN: base_path,
+    permitStart: config_info.permit_start,
+    buttonLayout: buttonLayoutConfig
+},
+{
+    cb_finishload: function() {
+        config_info.is_debug === !0 && console.log("rewrite_cb_finishload"),
+       
+        void 0 !== window.my_finishload && window.my_finishload()
+    },
+    cb_start: function() {
+        return 1;
+    },
+    cb_gameover: function(a, b) {
+        updateShare(a);
+		Play68.setRankingScoreDesc(a);
+    },
+    cb_levelwin: function() {
+       
+    },
+    cb_share: function() {
+       Play68.shareFriend();
+    },
+    cb_more: function() {
+		Play68.goHome();
+    },    
+    cb_restart: function() {
+       
+    }
+});
+permit_game_start=function(){meiriq_game.updatePermitStart(1)},ban_game_start=function(){meiriq_game.updatePermitStart(0)};
+</script>
+<script type="text/javascript">
+if (typeof(config_info.page_source) !== "undefined") {
+    page_source = config_info.page_source;
+} else {
+    page_source = 'base';
+}
+Meiriq_stat = (function () {
+  
+});
+var meiriq_stat = new Meiriq_stat();
+
+</script>
+
+<script>
+    var support = [].map && document.createElement("canvas").getContext;
+    if (support) {
+        egret_h5.startGame();
+    }
+    else {
+        alert("Egret 不支持您当前的浏览器")
+    }
+</script>
+</body>
+</html>

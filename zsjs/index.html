@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html manifest="offline.appcache">
+<head>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>钻石竞赛-68微游戏</title>
+	
+	<!-- Standardised web app manifest -->
+	<link rel="manifest" href="app.manifest" />
+	
+	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			background: #000;
+			color: #fff;
+			overflow: hidden;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+    </style>
+	
+
+<!-- iOS9 Fix 
+<meta name="viewport" content="width=device-width, initial-scale=1.01, maximum-scale=1.01, minimum-scale=1.01, user-scalable=no, minimal-ui" />-->
+
+<script>
+var eventsToFire = {};
+function registerEvent(eventName, callback, args){
+	if(typeof(eventsToFire) == 'undefined') return false;
+	if(typeof(eventName) != 'string') return false;
+	if(typeof(callback) != 'function' && typeof(callback) != 'string') return false;
+	if(typeof(eventsToFire[eventName]) == 'undefined')	eventsToFire[eventName] = [];
+	eventsToFire[eventName].push({"func":callback, "args":args});
+	return true;
+}
+function fireEvent(eventName){
+	if(typeof(eventName) != 'string') return false;
+	if(typeof(eventsToFire) == 'undefined') return false;
+	if(typeof(eventsToFire[eventName]) == 'undefined') return false;
+	for(var i =0; i < eventsToFire[eventName].length;i++){
+			eventsToFire[eventName][i]["func"](eventsToFire[eventName][i]["args"]);
+	}
+	return true;
+}
+</script>
+</head>  
+ 
+<body> 
+	<script type="text/javascript" src="js/play68_sdk.js"></script>
+	<script language="javascript" type="text/javascript" src="js/play68.js"></script>
+	<script type="text/javascript">
+		var myFlag=0;
+		(function (){updateShare(0);})();
+	</script>
+	<div id="fb-root"></div>
+	
+	<script>
+	// Issue a warning if trying to preview an exported project on disk.
+	(function(){
+		// Check for running exported on file protocol
+		if (window.location.protocol.substr(0, 4) === "file")
+		{
+			alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
+		}
+	})();
+	</script>
+	
+	<!-- The canvas must be inside a div called c2canvasdiv -->
+	<div id="c2canvasdiv">
+	
+		<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
+		<canvas id="c2canvas" width="510" height="907">
+			<!-- This text is displayed if the visitor's browser does not support HTML5.
+			You can change it, but it is a good idea to link to a description of a browser
+			and provide some links to download some popular HTML5-compatible browsers. -->
+			<h1>您的浏览器似乎不支持HTML5。试试你的浏览器升级到最新版本。<a href="http://www.whatbrowser.org">什么是浏览器?</a>
+			<br/><br/><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">微软的Internet Explorer</a><br/>
+			<a href="http://www.mozilla.com/firefox/">火狐浏览器</a><br/>
+			<a href="http://www.google.com/chrome/">谷歌Chrome浏览器</a><br/>
+			<a href="http://www.apple.com/safari/download/">苹果Safari浏览器</a><br/>
+			<a href="http://www.google.com/chromeframe">谷歌浏览器内嵌框架的Internet Explorer</a><br/></h1>
+		</canvas>
+		
+	</div>
+<script src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="c2runtime.js"></script>
+
+<div class="containerProgressBar" id="containerProgressBar" >
+	<div class="progressBar" id="progressBar" ></div>
+</div>
+
+<script>
+
+var showInterDFP = true;</script>
+<script>
+var setRankingScoreFlag=0;
+var GGTrackerTimerTime = 60;
+var GGTrackerTimer;
+var GGATrackerActive = true;
+function reActiveGGTracker(){
+	// console.log("GGTracker reactivated");
+	clearTimeout(GGTrackerTimer);
+	GGTrackerTimer = setTimeout(function(){GGATrackerActive=false;}, GGTrackerTimerTime*1000);
+}
+reActiveGGTracker();
+document.getElementById("c2canvas").addEventListener("touchstart", reActiveGGTracker, false);
+document.getElementById("c2canvas").addEventListener("click", reActiveGGTracker, false);
+
+//
+/*
+var isInTouchGGA = false;
+document.getElementById("c2canvas").addEventListener("touchstart", function(){reActiveGGTracker(); isInTouchGGA=true;}, false);
+document.getElementById("c2canvas").addEventListener("mousedown", function(){reActiveGGTracker(); isInTouchGGA=true;}, false);
+document.getElementById("c2canvas").addEventListener("touchend", function(){isInTouchGGA=false;}, false);
+document.getElementById("c2canvas").addEventListener("mouseup", function(){isInTouchGGA=false;}, false);
+setInterval(function(){
+	if(isInTouchGGA) reActiveGGTracker();
+}, 1000);
+*/
+//
+jQuery(window).resize(function() {
+		cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+		if(checkOrientation())	hideRotator();
+	});
+	
+	// Create new runtime using the c2canvas
+	cr_createRuntime('c2canvas');
+
+	
+	// Pause and resume on page becoming visible/invisible
+	function onVisibilityChanged() {
+		if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+			cr_setSuspended(true);
+		else
+			cr_setSuspended(false);
+	};
+	document.body.style.backgroundColor="black";
+	document.addEventListener('visibilitychange', onVisibilityChanged, false);
+	document.addEventListener('mozvisibilitychange', onVisibilityChanged, false);
+	document.addEventListener('webkitvisibilitychange', onVisibilityChanged, false);
+	document.addEventListener('msvisibilitychange', onVisibilityChanged, false);
+</script>
+
+</body> 
+</html> 

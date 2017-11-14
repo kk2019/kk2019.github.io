@@ -1,0 +1,38 @@
+html {
+  background-color: #f7f7f7; }
+
+.main-wrapper {
+  width: 10rem;
+  margin: 0 auto; }
+
+#logo {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 0.6rem; }
+
+ul, li {
+  list-style: none; }
+
+ul {
+  width: 4.3rem;
+  margin: 0 auto;
+  margin-top: 0.4rem; }
+
+label {
+  width: 1.0rem;
+  text-align: right;
+  display: inline-block; }
+
+span {
+  margin-left: 0.10rem;
+  width: 2.80rem;
+  display: inline-block; }
+
+#copyright {
+  width: 10rem;
+  text-align: center;
+  font-size: 0.16rem;
+  margin-top: 0.6rem; }

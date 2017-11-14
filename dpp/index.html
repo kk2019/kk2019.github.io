@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>pc蛋蛋</title>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <style>
+        body, canvas, div {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+    #toolbar {
+		  position: absolute;
+		  bottom: 1%;
+		  text-align: center;
+		  z-index: 99;
+		  margin: auto;
+		  width: 80%;
+		  left: 10%;
+		  z-index: 999;
+		  display: none;
+				  
+				}
+		#toolbar .btn{
+			width: 40%;
+			color: rgb(249, 244, 244);
+			background-color:rgb(244, 147, 86);
+			margin: auto;
+			text-align: center;
+			border-radius: 5px;
+			font-weight: bold;
+			border: none;
+			font-size: 18x;
+			margin: 1%;
+			position: relative;
+			max-width:240px;
+		}
+	</style>
+</head>
+<body style="padding:0; margin: 0; background: #FFFFFF;" align="center">
+<script type="text/javascript" src="js/play68_sdk.js"></script>
+<script language="javascript" type="text/javascript" src="js/play68.js"></script>
+<script type="text/javascript">
+    (function (){updateShare(0);})();
+</script>
+<div id="loadingImg" style="top:35%;width: 100%;position:absolute; ">
+    <div style="margin-top:10%">
+        <img src="res/loading.gif" width="7%" height="7%"  />
+    </div>
+</div>
+<canvas id="gameCanvas" width="480" height="800" ></canvas>
+<script src="game.min.js"></script>
+</body>
+</html>
