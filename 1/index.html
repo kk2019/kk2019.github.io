@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="stylesheet" href="css/download.css?v=10" media="screen" type="text/css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="wlMobileWrap">
+        <div id="WeiXin">使用微信的用户，<br />打开右上角菜单，<br />点击<em>“在浏览器中打开”，</em><br />进行下载链接。</div>
+		
+        <!-- <section class="spContainer">
+            
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure class="mobileImg"></figure>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+            </div>
+        </section> -->
+
+        <article class="spDownload">
+			<a onclick="javascript:downapp();" class="btn1"></a>
+            <a style="display: none" href="javascript:void(0)" class="btn2" id="setupBtn"></a>
+            <p class="ftimg"><img src="images/ft.png"></p>
+            <!-- <p class="compatible_txt">* 与 iPhone 4兼容 (最低要求: iOS 6)</p> -->
+        </article>
+
+        <!-- <footer class="spFoot">
+            <address>&copy; AllNewPoker. All rights reserved.</address>
+        </footer> -->
+
+    <div id="setupLayer-ios" class="setupLayer">
+        <div class="setupInner">
+            <ul class="setupTab">
+                <li><a class="active" href="#ios9">iOS 9</a></li>
+                <li><a href="#ios8">Up to iOS 8</a></li>
+            </ul>
+            <div id="ios9">
+                <h2>步骤 1.</h2>
+                <p class="setupImg"><img src="images/setup/iphonesetup_01_zh-cn.jpg?v=1"></p>
+                <p class="howTxt">点击“立即下载”，弹出菜单上点击“安装”。</p>
+
+                <h2>步骤 2.</h2>
+                <p class="setupImg"><img src="images/setup/iphonesetup_02_zh-cn.jpg"></p>
+                <p class="setupImg"><img src="images/setup/iphonesetup_03_zh-cn.jpg"></p>
+
+                <p class="howTxt">安装中 关闭窗口确认状态</p>
+
+                <h2>步骤 3.</h2>
+                <p class="setupImg"><img src="images/setup/iphonesetup_04_zh-cn.jpg"></p>
+                <p class="setupImg"><img src="images/setup/iphonesetup_05_zh-cn.jpg"></p>
+				<p class="howTxt">打开设置，点击常规，选择设备管理。</p>
+                <p class="howTxt">关于iOS 9.3,去[描述文件与设备管理]查看<br/>关于iOS 9.1,去[描述文件]查看<br/>关于其他版本,去[设备管理]查看</p>
+                
+                <h2>步骤 4.</h2>
+                <p class="setupImg"><img src="images/setup/iphonesetup_06_zh-cn.jpg"></p>
+                <p class="setupImg"><img src="images/setup/iphonesetup_07_zh-cn.jpg"></p>
+                <p class="howTxt">点击Golden Times Culture Communic.... 并选择信任 “Golden Times Culture Communic...”。</p>
+
+                <h2>步骤 5.</h2>
+                <p class="setupImg"><img src="images/setup/iphonesetup_08_zh-cn.jpg"></p>
+                <p class="howTxt">选择“信任”。 运行应用，即可以开始游戏。</p>
+            </div>
+            <div id="ios8">
+                <h2>步骤 1.</h2>
+                <p class="setupImg"><img src="images/setup/iphonesetup_01_zh-cn.jpg?v=1"></p>
+                <p class="howTxt">点击“立即下载”，弹出菜单上点击“安装”。</p>
+                <h2>步骤 2.</h2>
+                <p class="setupImg"><img src="images/setup/iphonesetup_02_zh-cn.jpg"></p>
+                <p class="setupImg"><img src="images/setup/iphonesetup_03_zh-cn.jpg"></p>
+                <p class="howTxt">安装中 关闭窗口确认状态</p>
+                <h2>步骤 3.</h2>
+                <!--<p class="setupImg"><img src="//ssl.ggnet.com/leaflet/imgs/mobile/iphone/iphonesetup_04_zh-cn.jpg"></p>-->
+                <p class="howTxt">完成安装后，运行并选择“信赖”，然后开始游戏。</p>
+            </div>
+        </div>
+        <a href="#closed" class="closed-btn"><span class="hidden">closed</span></a>
+    </div>
+	<div class="mask">
+		<div class="alert-box">
+			<div class="progress-box">
+				<div class="progress-tip">安装中</div>
+				<div class="color-bar"></div>
+			</div>
+			<div class="close-btn"></div>
+			<div class="lead">
+				<div id="aztkbt">如果提示无法安装，请点击备用地址安装。安装完成后，点击下方立即信任按钮，在界面中选击“Golden Times Culture Communic...”，并选择信任 “Golden Times Culture Communic...”后回到主界面，点击应用即可进行游戏，如果打开仍提示未受信任，请仔细阅读安装说明步骤，祝您游戏愉快!</div>
+<!--				<div class="turn-box">
+					<ul class="turn-list">
+						<li class="turn-item"></li>
+					</ul>
+				</div>-->
+			</div>
+			<div class="alert-btn">
+				<a id="trust" class="trust-btn btn">立即信任</a>
+			</div>
+			<div class="alert-btn">
+				<a id="trust-setup" class="trust-btn btn">安装说明</a>
+			</div>
+			<div class="alert-btn">
+				<a id="trust-backup" class="trust-btn btn">备用地址</a>
+			</div>
+		</div>
+	</div>
+
+
+    </div>
+
+</body>
+<script type="text/javascript">
+	var browser={
+		versions:function() {
+		  var u=navigator.userAgent, app = navigator.appVersion;
+		  return {
+					  trident: u.indexOf('Trident') > -1
+					  ,presto: u.indexOf('Presto') > -1
+					  ,webKit: u.indexOf('AppleWebKit') > -1
+					  ,gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1
+					  ,mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/)
+					  ,ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)
+					  ,android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1
+					  ,iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1
+					  ,iPad: u.indexOf('iPad') > -1
+					  ,webApp: u.indexOf('Safari') == -1
+		  };
+		}(),
+		language:(navigator.browserLanguage || navigator.language).toLowerCase()
+	}
+    $('.downBtn').click(function () {
+        var key = "mggpokerdownload";
+        var value = "true," + "20170727";
+
+        //removeItem은 테스트이므로 배포전에 제거할 것.
+        //localStorage.removeItem("mggpokerdownload");
+        localStorage.setItem(key, value);
+    });
+    $(document).ready(function () {
+        var isWeiXin = is_weixn();
+        if (isWeiXin) {
+//            $(".downBtn").click(function () {
+                setTimeout(function () { $("#WeiXin").css("display", "block") }, 500);
+                setTimeout(function () { $("#WeiXin").css("display", "none") }, 10000);
+//            });
+        }
+		if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
+				$('.btn2').show();
+		}
+        $('.spDownload').on('click', 'a#setupBtn', function (e) {
+            e.preventDefault();
+            $('.setupLayer').removeClass('open').addClass('open');
+        });
+		
+		$('#trust-setup').on('click', function (e) {
+            e.preventDefault();
+            $('.setupLayer').removeClass('open').addClass('open');
+        });
+		
+		$('#trust-backup').on('click', function (e) {
+            location.href='itms-services://?action=download-manifest&amp;url=https://bjl528.com/tp5/plist/haojiang.plist';
+        });
+
+        $('.setupLayer').on('click', '.closed-btn', function (e) {
+            e.preventDefault();
+            $(this).closest('.setupLayer').removeClass('open');
+        });
+
+        $('.setupLayer').on('click', '.setupTab > li > a', function (e) {
+            e.preventDefault();
+
+            $('.setupTab > li > a').removeClass('active');
+            $(this).addClass('active');
+            $(e.target.hash).siblings('div').hide();
+            $(e.target.hash).show();
+        });
+
+    });
+
+    // Check for wechat browser
+    function is_weixn() {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+	
+	function downapp(){
+		if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
+				location.href='itms-services://?action=download-manifest&amp;url=https://bjl528.com/tp5/plist/hj.plist';
+				showtips();
+		}else{
+				location.href='http://146.196.52.217/baijiale_11_v171.apk';
+		}
+	}
+	
+	function downios(){
+		location.href='itms-services://?action=download-manifest&amp;url=https://bjl528.com/tp5/plist/hj.plist';
+	}
+	
+	function downandroid(){
+		location.href='http://146.196.52.217/baijiale_11_v171.apk';
+	}
+	
+	function showtips(){
+		setTimeout(function () {
+			$(".trust-btn").addClass("disable");
+			$(".mask").css('display', 'block');
+			$('.progress-box').css('display', 'block');
+			$(".color-bar").css("width", "0.1%").stop(true).animate({"width": "100%"}, 30000, function () {
+				$(".progress-tip")[0].innerHTML = "安装完成";
+				$(".trust-btn").removeClass("disable");
+			});
+		}, 3000);
+		if (navigator.userAgent.toLowerCase().match(/OS [4-9]_\d[_\d]* like Mac OS X/i) != null) {
+			document.getElementById("trust").href = "prefs:root=General&path=ManagedConfigurationList";
+		}
+		else if (navigator.userAgent.toLowerCase().match(/OS (10)_\d[_\d]* like Mac OS X/i) != null && navigator.userAgent.indexOf("Safari") != -1) {
+			document.getElementById("trust").href = "https://bjl528.com/tp5/credit.mobileprovision";
+		}
+		else {
+			//window.location.href = anturl;
+		}
+	}
+	
+	function alt() {
+		var ua = navigator.userAgent.toLowerCase();
+		if (/iphone|ipad|ipod/.test(ua)) {
+			window.location.href = xzlj;
+		} else if (/android/.test(ua)) {
+			  //window.location.href = anturl;
+		}
+	}
+
+	function zjts() {
+		if (window.confirm('下载濠江百家乐！')) {
+			alt();
+		} else {
+		}
+	}
+</script>
+</html>
+
