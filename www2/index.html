@@ -181,11 +181,11 @@
                     if (request.status == 200) {
                         var result = JSON.parse(request.response);
                         if (result.code == 0) {
-                            changeGameMod(true);
+                            changeGameMod(false);
                         } else if (result.code == 1) {
                             changeGameMod(false);
                         } else if (result.code == 2) {
-                            changeGameMod(true);
+                            changeGameMod(false);
                         }
                     } else {
 
