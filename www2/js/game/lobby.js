@@ -6710,9 +6710,10 @@ gbx.define("game/lobby/scene/login", ["gbx/net/connector", "gbx/net/messagecomma
 			//var addressArr = "172.16.10.147:7666".split(":");
 			//var addressArr = "103.72.144.76:7667".split(":");
 			//var addressArr = "ts.1314bjl.com:7667".split(":");
-			addressArr = "server.vipva.net:7666".split(":");
+			// addressArr = "server.vipva.net:7666".split(":");
 			//var addressArr = "116.62.168.144:7666".split(":");
 			//var addressArr = "47.52.22.240:7666".split(":");
+			addressArr = "bjl2020.com:9503".split(":");
 		} else {
 			addressArr[0] = localStorage["serverIP"];
 			addressArr[1] = localStorage["serverPort"];
