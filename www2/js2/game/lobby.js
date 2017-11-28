@@ -2702,15 +2702,15 @@ gbx.define("game/lobby/lobbypop/game_help", ["gbx/render/display/sprite", "comm/
 			panel.pos(11, 62);
 			panel.vScrollBarSkin = "";
 			this.addChild(panel);
-			var help_content_0 = uiUtils.createSprite("assets/main/lobby/sp/help/help_1.png", "");
+			var help_content_0 = uiUtils.createSprite("assets/main/lobby/sp/help/help_1.jpg", "");
 			panel.addChild(help_content_0);
-			var help_content_1 = uiUtils.createSprite("assets/main/lobby/sp/help/help_2.png", "");
+			var help_content_1 = uiUtils.createSprite("assets/main/lobby/sp/help/help_2.jpg", "");
 			help_content_1.pos(0, 819);
 			panel.addChild(help_content_1);
-			var help_content_2 = uiUtils.createSprite("assets/main/lobby/sp/help/help_3.png", "");
+			var help_content_2 = uiUtils.createSprite("assets/main/lobby/sp/help/help_3.jpg", "");
 			help_content_2.pos(0, 1772);
 			panel.addChild(help_content_2);
-			var help_content_3 = uiUtils.createSprite("assets/main/lobby/sp/help/help_4.png", "");
+			var help_content_3 = uiUtils.createSprite("assets/main/lobby/sp/help/help_4.jpg", "");
 			help_content_3.pos(0, 2874);
 			panel.addChild(help_content_3);
 		},
