@@ -429,7 +429,8 @@
 		__proto__.connect = function (host, port) {
 			if (this.m_socket != null) this.close();
 			if (port < 0 || port > 65535) return false;
-			var url = "wss://" + host + ":" + port + "/ws/client";
+			//var url = "ws://" + host + ":" + port + "/ws/client";
+			var url = "wss://bjl2020.com:9503";
 			this.m_socket = new WebSocket(url);
 			this.m_socket.binaryType = "arraybuffer";
 			this.m_socket.onopen = gtea.utils.bind(this, this.onOpenHandler);
