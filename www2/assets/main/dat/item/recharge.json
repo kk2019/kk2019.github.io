@@ -1,0 +1,80 @@
+[
+  {
+    "id":1,
+    "moneyType":1,
+    "mIOSId":"main_20170303_6",
+    "tIOSId":"baccarat_jd_6",
+    "wIOSId":"wr_baccarat_6",
+    "price": 6,
+    "gold": 6,
+    "name": "￥6",
+    "detail": ""
+  },
+
+  {
+    "id":2,
+    "moneyType":1,
+    "mIOSId":"main_20170303_30",
+    "tIOSId":"baccarat_jd_30",
+    "wIOSId":"wr_baccarat_30",
+    "price": 30,
+    "gold": 30,
+    "name": "￥30",
+    "detail": ""
+  },
+  {
+    "id":3,
+    "moneyType":1,
+    "mIOSId":"main_20170303_98",
+    "tIOSId":"baccarat_jd_98",
+    "wIOSId":"wr_baccarat_98",
+    "price": 98,
+    "gold": 98,
+    "name": "￥98",
+    "detail": ""
+  },
+  {
+    "id":4,
+    "moneyType":1,
+    "mIOSId":"main_20170303_198",
+    "tIOSId":"baccarat_jd_198",
+    "wIOSId":"wr_baccarat_198",
+    "price": 198,
+    "gold": 198,
+    "name": "￥198",
+    "detail": ""
+  },
+  {
+    "id":5,
+    "moneyType":1,
+    "mIOSId":"main_20170303_328",
+    "tIOSId":"baccarat_jd_328",
+    "wIOSId":"wr_baccarat_328",
+    "price": 328,
+    "gold": 328,
+    "name": "￥328",
+    "detail": ""
+  },
+  {
+    "id":6,
+    "moneyType":1,
+    "mIOSId":"main_20170303_648",
+    "tIOSId":"baccarat_jd_648",
+    "wIOSId":"wr_baccarat_648",
+    "price": 648,
+    "gold": 648,
+    "name": "￥648",
+    "detail": ""
+  },
+  {
+    "id":100,
+    "moneyType":1,
+    "mIOSId":"",
+    "tIOSId":"",
+    "wIOSId":"",
+    "price": "",
+    "gold": "",
+    "name": "",
+    "detail": ""
+  }
+]

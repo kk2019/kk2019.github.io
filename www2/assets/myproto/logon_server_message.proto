@@ -1,0 +1,390 @@
+syntax = "proto2";
+
+package message;
+
+message RequestFastRegister {
+	required uint32 SpreaderID 		= 1;	
+	required uint32 ThirdSpreaderID = 2;	
+	required string Account 		= 3;	
+	required string MachineID 		= 4;	
+	required string NickName 		= 5;	
+	required string LoginPass 		= 6;	
+	required string InsurePass 		= 7;	
+	required uint32 FaceID 			= 8;	
+	required uint32 Gender 			= 9;	
+	optional string FaceUrl			= 10;	
+	optional string IPAddr			= 11;	
+	optional bytes Key 				= 12;	
+	optional string IDFA			= 13;	
+	optional string AndroidId		= 14;	
+}
+
+
+message RequestPhoneRegister {
+	required uint32 SpreaderID 		= 1;	
+	required uint32 ThirdSpreaderID = 2;	
+	required string MobilePhone 	= 3;	
+	required string LoginPass 		= 4;	
+	required int32 	VerifyCode 		= 5;	
+	required string MachineID 		= 6;	
+	optional string IPAddr			= 7;	
+	optional bytes Key 				= 8;	
+	optional string SpreaderPhone 	= 9;	
+	optional string IDFA			= 10;	
+	optional string AndroidId		= 11;	
+}
+
+
+message RequestLoginByAccount {
+	required string MobilePhone 	= 1;	
+	required string LoginPass 		= 2;	
+	optional string IPAddr			= 3;	
+	optional bytes Key 				= 4;	
+}
+
+message RequestModifyNickName {
+	required string NickName = 1;	
+}
+
+message RequestModifyUserInfo {
+	optional uint32 FaceID 			= 1;  
+	optional uint32 Gender 			= 2;  
+}
+
+message ReplyModifyResult {
+	enum ErrorCodeType {
+		RPMR_Success 		= 0;	
+		RPMR_Repeat 		= 1;	
+		RPMR_Fails			= 2;	
+		RPMR_Illegal		= 3;	
+		RPMR_Spechars		= 4;	
+	}
+	required ErrorCodeType ErrorCode 	= 1;	
+	required uint32 UserID 				= 2;  	
+}
+
+message ReplyUserInfo {
+	required uint32 UserID 			= 1;  
+	optional string NickName 		= 2;  
+	optional uint32 Level 			= 3;  
+	optional uint32 FaceID 			= 4;  
+	optional uint32 Charm 			= 5;  
+	optional uint32 Gender 			= 6;  
+	optional uint32 VipLevel 		= 7;  
+	optional uint32	VipExpire 		= 8;  
+	optional uint32 Experience 		= 9;  
+	optional string MobilePhone 	= 10; 
+	optional uint64 Score 			= 11; 
+	optional uint64 InsureScore 	= 12; 
+	optional uint64 Diamond 		= 13; 
+	optional uint64 Lottery 		= 14; 
+	optional string FaceUrl			= 15; 
+}
+
+message ReplyMessage {
+	required int32	MsgType = 1;			
+	required string Message = 2;			
+}
+
+
+message ReplyUserSignInInfo {
+	required bool IsSigned 			= 1; 
+	required uint32 Counts 			= 2; 
+	repeated uint64 Score      		= 3; 
+}
+
+
+message ReplyUserSignInResult {
+enum ErrorCodeType {
+		Success 		= 0;	
+		SignedIn 		= 1;	
+	}
+	required ErrorCodeType ErrorCode 	= 1;	
+	optional uint32 Counts 				= 2;	
+	optional int64 Score 				= 3;	
+}
+
+
+message RequestVerifyCode {
+enum VerifyType {
+		FindPass 		= 1;	
+		BindMobile 		= 2;	
+	}
+	required string MobilePhone = 1;
+	required VerifyType Type = 2;
+}
+
+
+message RequestFindPass {
+	required string MobilePhone = 1;	
+	required int32 	VerifyCode = 2;		
+	required string NewPass = 3;		
+	optional bytes Key = 4;	
+}
+
+message ReplyFindPass {
+	enum ErrorCodeType {
+		Success 		= 0;	
+		Expire 			= 1;	
+		Incorrect		= 2; 	
+		NotBind			= 3; 	
+		Other			= 4; 	
+	}
+	required ErrorCodeType ErrorCode 	= 1;	
+}
+
+
+message RequestBindMobile {
+	required string MobilePhone = 1;
+	required string VerifyCode = 2;
+	required string NewPass = 3;
+}
+
+message ReplyBindMobile {
+	enum ErrorCodeType {
+		Success 		= 0;	
+		Expire 			= 1;	
+		Incorrect		= 2; 	
+		MobileBind		= 3; 	
+		AccountBind		= 4;	
+		Other			= 5; 	
+	}
+	required ErrorCodeType ErrorCode 	= 1;	
+	optional uint64 BindScore = 2; 
+}
+
+
+message ReplyShareGame {
+	enum ErrorCodeType {
+		Success 		= 0;	
+		Other			= 1; 	
+	}
+	required ErrorCodeType ErrorCode 	= 1;	
+	optional uint64 ShareScore = 2; 
+}
+
+
+message RequestRankListInfo {
+	enum RankListID {
+		TotalScore 		= 0;	
+	}
+	required RankListID RankID = 1;
+}
+
+message RankUserInfo {
+	required uint32 UserID 			= 1;  
+	optional string NickName 		= 2;  
+	optional uint32 FaceID 			= 3;  
+	optional uint32 Gender 			= 4;  
+	optional uint32 VipLevel 		= 5;  
+	optional uint64 Score 			= 6;  
+}
+
+message ReplyRankListInfo {
+	repeated RankUserInfo Info = 1;
+}
+
+message FreeScoreInfo {
+	required uint32 ID 			= 1;
+	required uint32 Tnum		= 3;
+	required uint32 Icon		= 4;
+	required uint64 Score 		= 5;
+}
+
+
+message ReplyFreeScoreInfo {
+	repeated FreeScoreInfo Info = 1;
+}
+
+
+message ReplyUserRecharge {
+	required uint64 Score = 1;	
+}
+
+
+message ReplyScoreBySystem {
+	required int64 Score = 1;  
+}
+
+
+message UserGameStatus {
+	required uint32 UserID = 1;
+	required uint32 ServerID = 2;
+	required string GameName = 3;
+	optional int32 RoomID = 4;		
+}
+
+
+message ReplyRedDot {
+	required bool Task = 1;		
+	required bool Share = 2;	
+}
+
+
+message RequestCertification {
+	required string Name = 1;			
+	required string Carded = 2;			
+}
+
+
+message ReplyCertification {
+	enum ErrorCodeType {
+		Success 		= 0;	
+		Other			= 1; 	
+	}
+	required ErrorCodeType ErrorCode = 1; 
+}
+
+message RequestTakeCash {
+	required int64 Money 		= 1;
+}
+
+message ReplyTakeCash {
+	enum ErrorCodeType {
+		Success 		= 0;	
+		NotEnough		= 1; 	
+		Playing			= 2; 	
+		NoBind			= 3; 	
+		TakeCount		= 4; 	
+		TakeHundred		= 5; 	
+	}
+	required ErrorCodeType ErrorCode = 1;
+	required int64 Money 		= 2;
+}
+
+
+message RequestModifyPassword {
+	required string MobilePhone = 1;	
+	required int32 	VerifyCode = 2;		
+	required string NewPass = 3;		
+}
+
+message ReplyModifyPassword {
+	enum ErrorCodeType {
+		Success 		= 0;	
+		Expire 			= 1;	
+		Incorrect		= 2; 	
+		NotBind			= 3; 	
+		Other			= 4; 	
+	}
+	required ErrorCodeType ErrorCode 	= 1;	
+}
+
+
+message RequestInsureLogin {
+	required string Password 	= 1;	
+}
+
+
+message ReplyInsureLogin {
+	enum ErrorCodeType {
+		Success 		= 0;	
+		Incorrect		= 1; 	
+		Playing			= 2; 	
+	}
+	required ErrorCodeType ErrorCode 	= 1;	
+	optional int64 InsureScore 			= 2;	
+	optional int64 Score				= 3; 	
+}
+
+
+message RequestInsureTakeScore {
+	required int64 Score  = 1;	
+}
+
+message ReplyInsureTakeScore {
+	enum ErrorCodeType {
+		Success 		= 0;	
+		Over			= 1; 	
+		Playing			= 2; 	
+	}
+	required ErrorCodeType ErrorCode 	= 1;	
+	optional int64 InsureScore 			= 2;	
+	optional int64 Score				= 3; 	
+}
+
+
+message RequestInsureSaveScore {
+	required int64 Score  = 1;	
+}
+
+message ReplyInsureSaveScore {
+	enum ErrorCodeType {
+		Success 		= 0;	
+		Over			= 1; 	
+		NoScore			= 2; 	
+		Playing			= 3; 	
+	}
+	required ErrorCodeType ErrorCode 	= 1;	
+	optional int64 InsureScore 			= 2;	
+	optional int64 Score				= 3; 	
+}
+
+message VipRoomInfo {
+	required int32 RoomId  = 1;			
+	required int32 PlayerCount  = 2;	
+	required string RoomName = 3;		
+	required int32 ChipsRange = 4;		
+	required int64 Cost = 5;			
+}
+
+
+message ReplyVipRoomList {
+	repeated VipRoomInfo List = 1;		
+}
+
+
+message ReplyRoadPushMessage {
+	required int32 RoadId = 1;		
+	required int32 Count = 2;		
+	required int32 RoomType = 3;	
+	required int32 RoomId = 4;		
+	repeated int32 BigRoad = 5;		
+	repeated int32 DishRoad = 6;	
+	required int64 LowerLimit = 7;	
+	required int64 UpperLimit = 8;	
+}
+
+message RoadMapCfg {
+	required int32 RoadId = 1;		
+	required int32 Count = 2;		
+	required bool Close = 3;		
+}
+
+message RequestConfigureRoadMap {
+	repeated RoadMapCfg RoadCfg = 1;
+	required int32 MaxTime = 2;
+	required int32 MinTime = 3;
+	required bool InGame  = 4;
+}
+
+message ReplyConfigureRoadMap {
+	enum ErrorCodeType {
+		Success 		= 0;	
+		Error			= 1; 	
+	}
+	required ErrorCodeType ErrorCode 	= 1;	
+}
+
+message ReplyRoadMapConfig {
+	repeated RoadMapCfg RoadCfg = 1;
+	required int32 MaxTime = 2;
+	required int32 MinTime = 3;
+	required bool InGame  = 4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

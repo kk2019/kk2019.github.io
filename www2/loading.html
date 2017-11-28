@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<style>
+			html,body{
+				margin: 0;
+				padding: 0;
+				height: 100%;
+			}
+			body{
+				background-image: url(loading_bg.png);
+				background-repeat:no-repeat;
+				background-position: 50% 50%;
+				background-size: cover;
+			}
+			#loading_bar{
+				position: absolute;
+				left: 0;
+				top: 75%;
+				width: 80%;
+				height: 16px;
+				padding: 3px;
+				margin: -10px 10% 0;
+				border-radius: 8px;
+				border-top: 1px solid #252b2e;
+				border-bottom: 1px solid #15191a;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#454f55+0,191d1f+100&0.5+0,0.5+100 */
+				background: -moz-linear-gradient(top,  rgba(69,79,85,0.5) 0%, rgba(25,29,31,0.5) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  rgba(69,79,85,0.5) 0%,rgba(25,29,31,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  rgba(69,79,85,0.5) 0%,rgba(25,29,31,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80454f55', endColorstr='#80191d1f',GradientType=0 ); /* IE6-9 */
+
+				/* http://www.cssmatic.com/box-shadow */
+				-webkit-box-shadow: inset 6px 6px 24px -6px rgba(21,25,26,0.6);
+				-moz-box-shadow: inset 6px 6px 24px -6px rgba(21,25,26,0.6);
+				box-shadow: inset 6px 6px 24px -6px rgba(21,25,26,0.6);
+			}
+			#loading_bar .percent{
+				position: absolute;
+				left: 0%;
+				top: -30px;
+				width: 43px;
+				height: 29px;
+				margin-left: -22px;
+				background-repeat: no-repeat;
+				font-size: 12px;
+				color: #fff;
+				font-weight: 700;
+				text-align: center;
+				line-height: 22px;
+				font-family: Verdana;
+				-webkit-animation: animation-percent 3s infinite ease-in-out;
+				/*-webkit-transition: left 400ms ease-out;*/
+				/* http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ */
+				background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAdCAYAAAAzfpVwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowN0MwMjQ3QTU3MjA2ODExODhDNjhCNDM2MjVEREZFNyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5N0FENUZGQTZDRDMxMUU2QUQ2QUZEMjU4QjE4N0EzMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5N0FENUZGOTZDRDMxMUU2QUQ2QUZEMjU4QjE4N0EzMyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA4QzAyNDdBNTcyMDY4MTE4OEM2OEI0MzYyNURERkU3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA3QzAyNDdBNTcyMDY4MTE4OEM2OEI0MzYyNURERkU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+k34fBAAAAjBJREFUeNrsl79P21AQx88/VcB2GxCEUqygIig/0nSsVNaAulRV/V90ipdW0K1Dy8BSpvwNIMHASLKCxAhiakMl5EISIhHqH0LEIeHOIghEq1LFKLaUk05nPz/5ffx9997zMbOfvwDZyvJSEsN7dIoKtN5M9Cx6+vvuNkXgL0G/SpI8F08koC8aBUEQWk7quq5yVCxquzs72mj8xTwCf2JGJhNJWZYzL19NgWEYUC6XoVqtthyW53mIRCKgqipsbW6AZVnTXE9fdGEi/nz8Ry5HDVCr1SAIRhyO40CpVILY0BAU8nmJ0iBp2jbJDkE04iI+tBmCVU5w6usBUfRPdnJ8TMFTNrCqXqXE5RryYIOs6o1F10jm0MC2lW0rGzZlQwZ73ob101iWC08ahAq2kQYmbl1KCFhtgs1yHK+5biW4igoihXWCTQuiqLmVM6jX64EDZRgGRFEktjQ78mwsixfzDzo6geU4D5hyuNVOHMRDXMRHRSPz+q3mfcFeLteobqfR5f/5+ir+D5869j/7dXRJOKV3LkYt9Mz16pZJvnnX9FTt/9z7hsApx7b+2qdLkgl0MfZ0WL/enllbvXvu1tzmK1lVjemGsQ+dkpRyTPM2qKx4oNSvmfH4c59Or4Eng/rhwS8CS9nm76t2SXkIuIAX6XmzY/F+Hgj9jwf0Qv6QAD3gBii1+zEOKuvv6dUb7ddLxULlUXfPB4ZlF/D+o19jsPexNxIggvZS9PO9FwIMAI9uXDp57JhPAAAAAElFTkSuQmCC);
+				opacity:.8;
+				pointer-events: none;
+			}
+			#loading_bar .progress{
+				width: 0%;
+				height: 100%;
+				border-radius: 4px;
+				/*-webkit-transition: width 400ms ease-out;*/
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2eb6e6+0,1a82d4+100 */
+				background: #2eb6e6; /* Old browsers */
+				background: -moz-linear-gradient(top,  #2eb6e6 0%, #1a82d4 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  #2eb6e6 0%,#1a82d4 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  #2eb6e6 0%,#1a82d4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2eb6e6', endColorstr='#1a82d4',GradientType=0 ); /* IE6-9 */
+				-webkit-box-shadow: inset 1px 2px 3px 0px rgba(110,219,243,0.6);
+				-moz-box-shadow: inset 1px 2px 3px 0px rgba(110,219,243,0.6);
+				box-shadow: inset 1px 2px 3px 0px rgba(110,219,243,0.6);
+				pointer-events: none;
+			}
+			#loading_bar .hint{
+				position:absolute;
+				width:100%;
+				text-align:center;
+				color:#f5f5f5;
+				left:0;
+				pointer-events: none;
+			}
+			@-webkit-keyframes animation-percent{
+				0% {-webkit-transform:translate(0,0px);}
+				50% {-webkit-transform:translate(0,-5px);}
+				100% {-webkit-transform:translate(0,0px);}
+			}
+		</style>
+		<script>document.addEventListener('touchmove',function(ev){ev.preventDefault()},false);</script>
+	</head>
+	<body>
+		<div id="loading_bar">
+			<div class="percent">99999%</div>
+			<div class="progress"></div>
+			<div class="hint"></div>
+		</div>
+		<script>
+			!function onResize(){
+				document.querySelector('#loading_bar .hint').style.marginTop = window.innerHeight/12+'px';
+			}();
+			function setProgress(percent){
+				console.log("AAAAAAAA")
+				percent = Math.round(percent*100);
+				percent = Math.max(0,Math.min(100,percent));
+				document.querySelector('#loading_bar .percent').innerHTML = percent+'%';
+				document.querySelector('#loading_bar .percent').style.left = percent+'%';
+				document.querySelector('#loading_bar .progress').style.width = percent+'%';
+			}
+			function setHintText(message){
+				document.querySelector('#loading_bar .hint').innerHTML = message;
+			}
+			setProgress(100)
+		</script>
+	</body>
+</html>

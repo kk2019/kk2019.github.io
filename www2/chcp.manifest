@@ -1,0 +1,1202 @@
+[
+  {
+    "file": "assets/baccarat/dat/definition.json",
+    "hash": "a65027aeb5176589f6f88fa4a37b45fe"
+  },
+  {
+    "file": "assets/baccarat/dat/setting.json",
+    "hash": "e6a4733fe1d37d1035b852e293fb520b"
+  },
+  {
+    "file": "assets/baccarat/se/alarm.mp3",
+    "hash": "e68048a353eb88ef73a803a067c01618"
+  },
+  {
+    "file": "assets/baccarat/se/alarm.ogg",
+    "hash": "31651687d3798ff02d39e2383c53c759"
+  },
+  {
+    "file": "assets/baccarat/se/bk.mp3",
+    "hash": "0d390ff2cff9170a7be9c1c5c04b8c14"
+  },
+  {
+    "file": "assets/baccarat/se/bk.ogg",
+    "hash": "91c81b8c2857bc32b858d23de964c621"
+  },
+  {
+    "file": "assets/baccarat/se/chip.mp3",
+    "hash": "772a41deca9dfc9d8121869bbf135d29"
+  },
+  {
+    "file": "assets/baccarat/se/chip.ogg",
+    "hash": "5523611b470cf6eb57a0114d80f35bf5"
+  },
+  {
+    "file": "assets/baccarat/se/chipbk.mp3",
+    "hash": "6964b4ae9f87607a24fe808c72df1980"
+  },
+  {
+    "file": "assets/baccarat/se/chipbk.ogg",
+    "hash": "597c1ed402c7e451a600c6fb592be23f"
+  },
+  {
+    "file": "assets/baccarat/se/clock.mp3",
+    "hash": "92b798b04fb03e570ae01d150da6fcc4"
+  },
+  {
+    "file": "assets/baccarat/se/fapai.mp3",
+    "hash": "17d3e539b8d7715d62669c3f3c8f7e6c"
+  },
+  {
+    "file": "assets/baccarat/se/fapai.ogg",
+    "hash": "456e5913ea87cf93777b7c29c2b4c120"
+  },
+  {
+    "file": "assets/baccarat/se/pong.mp3",
+    "hash": "91e3d140dd6a78716d400df372723ebb"
+  },
+  {
+    "file": "assets/baccarat/se/sendcard.mp3",
+    "hash": "82188679bf3b63b4fdd9160ac333019e"
+  },
+  {
+    "file": "assets/baccarat/se/sendcard.ogg",
+    "hash": "06dffdb3d28d7ec69e831700f9c913ca"
+  },
+  {
+    "file": "assets/baccarat/se/sit.mp3",
+    "hash": "46a2c66abaf9e09b0ae7254ea22b3ba4"
+  },
+  {
+    "file": "assets/baccarat/se/sit.ogg",
+    "hash": "29c597c1e8813a4443891a569a8d9b7d"
+  },
+  {
+    "file": "assets/baccarat/se/time.mp3",
+    "hash": "1fd409e703498fb34d7a8758ac5f9a91"
+  },
+  {
+    "file": "assets/baccarat/se/time.ogg",
+    "hash": "560ded8022c5043191aaee1245e961a5"
+  },
+  {
+    "file": "assets/baccarat/se/win.mp3",
+    "hash": "bcfcccbaa57183bf1cf2b14b8e4a1753"
+  },
+  {
+    "file": "assets/baccarat/se/win.ogg",
+    "hash": "1583b0f01ec5f5f2ece69df2232c08fe"
+  },
+  {
+    "file": "assets/baccarat/tex/bg_r.jpg",
+    "hash": "ea7f7da50f8f64d19348406c18d841e0"
+  },
+  {
+    "file": "assets/baccarat/tex/bg.jpg",
+    "hash": "d12891d6a38b44efc60cf93d29f76d61"
+  },
+  {
+    "file": "assets/baccarat/tex/chip_shadow.png",
+    "hash": "03dfba3b80c0e3f1e7eca4e38192dcd1"
+  },
+  {
+    "file": "assets/baccarat/tex/lobby_bg_1.png",
+    "hash": "1861a8c94fd46a93309dfc1b3a54f823"
+  },
+  {
+    "file": "assets/baccarat/tex/lobby_bg.jpg",
+    "hash": "e3523fa3ee81cef13765a2f04dd7915c"
+  },
+  {
+    "file": "assets/baccarat/tex/mi_border_farmer.png",
+    "hash": "a79c9e1f5da91a3cefa7d8b587aa67e7"
+  },
+  {
+    "file": "assets/baccarat/tex/mi_mian_farmer.png",
+    "hash": "4fc1ca63217bda85fdaf11d263a17429"
+  },
+  {
+    "file": "assets/baccarat/tex/pairbet.png",
+    "hash": "6aadd232d2a013f516f7061c47dae4fe"
+  },
+  {
+    "file": "assets/baccarat/tex/top_card_bg_lhd.png",
+    "hash": "5aa725f1eb24890a05cf1ff9e1858182"
+  },
+  {
+    "file": "assets/baccarat/tex/top_card_bg.png",
+    "hash": "fa8d842d10a5f7e1f4e00269bd8f19fa"
+  },
+  {
+    "file": "assets/main/bank/RechargeBackGround.png",
+    "hash": "adad6d9e3937c638c4980f6ca881c8a8"
+  },
+  {
+    "file": "assets/main/bgm/back.mp3",
+    "hash": "239d3bd8cc16553cf84d116f3ccfb150"
+  },
+  {
+    "file": "assets/main/bgm/back.ogg",
+    "hash": "7fe20e8a62e242d2c4edb164bdab0325"
+  },
+  {
+    "file": "assets/main/common/loading/clouddownload.png",
+    "hash": "0445153d308ca0eed83f2f6290dff4fb"
+  },
+  {
+    "file": "assets/main/common/loading/loadingbg.png",
+    "hash": "3bed21ebecd0ae030110bb6ebc25cbb7"
+  },
+  {
+    "file": "assets/main/common/marquee/message_bg.png",
+    "hash": "26ae6e64f785bbde526ff0a155d20956"
+  },
+  {
+    "file": "assets/main/common/topmessage/alpha_h2.png",
+    "hash": "ff633a139939e9c121f08709784b6603"
+  },
+  {
+    "file": "assets/main/dat/game/lobby.json",
+    "hash": "77edfe3cee21ba8b79f874f31ad90354"
+  },
+  {
+    "file": "assets/main/dat/item/recharge.json",
+    "hash": "55665729c6bf584b8be9416f28172673"
+  },
+  {
+    "file": "assets/main/dat/user/sensitive.json",
+    "hash": "e7c93dc41142f30d06d7d480aa5ff3fa"
+  },
+  {
+    "file": "assets/main/lobby/sp/gambledetail/splitLine.png",
+    "hash": "a62bcf834a21a3dddc7c284c6d0fd08c"
+  },
+  {
+    "file": "assets/main/lobby/sp/game_spread/bg_up.png",
+    "hash": "d6e4b0efbf04629f20124f2066f467ac"
+  },
+  {
+    "file": "assets/main/lobby/sp/game_spread/record_bg_1.png",
+    "hash": "b4c7b6de949b473720a596bf22305dd7"
+  },
+  {
+    "file": "assets/main/lobby/sp/game_spread/record_bg.png",
+    "hash": "e1451e227d9715b7d04af5ce5ae85959"
+  },
+  {
+    "file": "assets/main/lobby/sp/game_spread/share_bg.png",
+    "hash": "f15fa344fb4e7233ff52caf56b3b1c95"
+  },
+  {
+    "file": "assets/main/lobby/sp/help/help_1.jpg",
+    "hash": "772d4e738f5dc37c14b1c7a446c85b0e"
+  },
+  {
+    "file": "assets/main/lobby/sp/main_split.png",
+    "hash": "30c7a8cfc93999d58cb1b5459614ef71"
+  },
+  {
+    "file": "assets/main/lobby/sp/panel_bar_botton.png",
+    "hash": "f2bda998beafe93cfbf4e2224ee99856"
+  },
+  {
+    "file": "assets/main/lobby/sp/panel_bar.png",
+    "hash": "bbd34ff6d68ff4f25d69d7154c9486a5"
+  },
+  {
+    "file": "assets/main/lobby/sp/splitline.png",
+    "hash": "582983646814c0a4b937eae4d9a52801"
+  },
+  {
+    "file": "assets/main/lobby/sp/vip/btn_vip_1.png",
+    "hash": "030d04ff3ddbe8a62374fa275fc0f164"
+  },
+  {
+    "file": "assets/main/lobby/sp/vip/btn_vip_2.png",
+    "hash": "a03a69093812f2309946bae7ee1a07bf"
+  },
+  {
+    "file": "assets/main/lobby/sp/vip/btn_vip_3.png",
+    "hash": "423613c7dfddd3efd99ea8d63b459725"
+  },
+  {
+    "file": "assets/main/lobby/sp/vip/card_boot_bg.png",
+    "hash": "8d88c4ef035235965f4026741f3bd274"
+  },
+  {
+    "file": "assets/main/login/denglu_dk1.png",
+    "hash": "fa871a250219ba7a298a94694d97bfc0"
+  },
+  {
+    "file": "assets/main/login/denglu_dk2.png",
+    "hash": "cf3db1315edc182e7e74ec4e97af3f76"
+  },
+  {
+    "file": "assets/main/login/login_bg.jpg",
+    "hash": "0bab6bfee8038f93c5f3af854de886d0"
+  },
+  {
+    "file": "assets/main/login/regiser_bg.png",
+    "hash": "9b4206ec125dcb6e0e84e2f385aa01e1"
+  },
+  {
+    "file": "assets/main/public/back_booter_02.png",
+    "hash": "dfa6f94fa307c4427f3c2c5040cad008"
+  },
+  {
+    "file": "assets/main/public/backgroud_superbig.png",
+    "hash": "1bc8c9cedfe9b67a9a4a6787a5a93553"
+  },
+  {
+    "file": "assets/main/public/background_big.png",
+    "hash": "9b4206ec125dcb6e0e84e2f385aa01e1"
+  },
+  {
+    "file": "assets/main/public/Full_screenBackGround.png",
+    "hash": "45c362e3250af7267fff90451a7df841"
+  },
+  {
+    "file": "assets/main/public/input_box_1.png",
+    "hash": "ac0d731866d8fc753c031033bd00b4f4"
+  },
+  {
+    "file": "assets/main/public/item_bg_1.png",
+    "hash": "aa6b6c15b94bc8a74030bb67d21c7e88"
+  },
+  {
+    "file": "assets/main/public/item_bg.png",
+    "hash": "9cefd6d8838fa895a11fea91f1c7f52c"
+  },
+  {
+    "file": "assets/main/public/lobby_bg.jpg",
+    "hash": "0bab6bfee8038f93c5f3af854de886d0"
+  },
+  {
+    "file": "assets/main/public/splitLine_1.png",
+    "hash": "e95f2b9c982d0b0cbde53540b5d2d4ce"
+  },
+  {
+    "file": "assets/main/public/splitLine_3.png",
+    "hash": "ca00a09e377eede460cea515b938f687"
+  },
+  {
+    "file": "assets/main/se/button.mp3",
+    "hash": "73cd518f5bb7af8f5b14282de4029a6c"
+  },
+  {
+    "file": "assets/main/se/dialog.mp3",
+    "hash": "423e02290b7a8059369e8c6b93bf5e04"
+  },
+  {
+    "file": "assets/main/se/dialog.ogg",
+    "hash": "48bf20f279c47257a06858928be856bc"
+  },
+  {
+    "file": "assets/main/sound/player_001.mp3",
+    "hash": "40f4df80ce78b67798d1660297ff41f0"
+  },
+  {
+    "file": "assets/main/sound/player_002.mp3",
+    "hash": "b5b2525df789391bdde98f715d4a5c0e"
+  },
+  {
+    "file": "assets/main/sound/player_003.mp3",
+    "hash": "2c03f55ea5e191f45b9d2bcc67503a8a"
+  },
+  {
+    "file": "assets/main/sound/player_004.mp3",
+    "hash": "6e77b993b94afd6284e62cd4921cc731"
+  },
+  {
+    "file": "assets/main/sound/player_005.mp3",
+    "hash": "a6509da6ed6ebc1859119cb314ab893f"
+  },
+  {
+    "file": "assets/main/sound/player_006.mp3",
+    "hash": "69ea141dcd5d703d580ce40d0e13ee17"
+  },
+  {
+    "file": "assets/main/sound/player_007.mp3",
+    "hash": "95f2e9c17c00cf2fc86a57c235660e06"
+  },
+  {
+    "file": "assets/main/sound/system_001.mp3",
+    "hash": "f32fc1a0d7383ff1c6e36cc622b1d722"
+  },
+  {
+    "file": "assets/main/sound/system_002.mp3",
+    "hash": "924686e58ff44fe0bc2abdc046e5853d"
+  },
+  {
+    "file": "assets/main/sound/system_003.mp3",
+    "hash": "a8182f2a7b344e72742e6e692ca06b79"
+  },
+  {
+    "file": "assets/main/sound/system_004.mp3",
+    "hash": "cb5dfe27173aed7c992d28cbd56e05a4"
+  },
+  {
+    "file": "assets/main/sound/system_005_lhd.mp3",
+    "hash": "6e7999bab790bcf6d8c3efb1e9649c2e"
+  },
+  {
+    "file": "assets/main/sound/system_005.mp3",
+    "hash": "d01f0af12a7a7af51fce09a64c380619"
+  },
+  {
+    "file": "assets/main/sound/system_006_lhd.mp3",
+    "hash": "ccbd046ac330b5b094799b2134e22781"
+  },
+  {
+    "file": "assets/main/sound/system_006.mp3",
+    "hash": "dd723bcd2b1171ff33337e7be76e52eb"
+  },
+  {
+    "file": "assets/main/sound/system_007_1.mp3",
+    "hash": "1bd4dc1df29948900ac6c5ea47fa691c"
+  },
+  {
+    "file": "assets/main/sound/system_007_2.mp3",
+    "hash": "d443bab1c5a803990d6cc18a90165ee5"
+  },
+  {
+    "file": "assets/main/sound/system_008.mp3",
+    "hash": "bc4e00070b1e6285784b3bb11133a8ab"
+  },
+  {
+    "file": "assets/main/sound/system_0080.mp3",
+    "hash": "6f10ba6cfce245197e50648a586b19cd"
+  },
+  {
+    "file": "assets/main/sound/system_009.mp3",
+    "hash": "82d2f1912c543ed91206d173e19349b9"
+  },
+  {
+    "file": "assets/main/sound/system_010.mp3",
+    "hash": "eaf7a5d6c099c195a2956bd5abd2eede"
+  },
+  {
+    "file": "assets/main/sound/system_011.mp3",
+    "hash": "c4f9c61ffe2769a6e29fe934f99cbced"
+  },
+  {
+    "file": "assets/main/sound/system_012.mp3",
+    "hash": "96c127ec5d726f0eb06cd622bc6009ef"
+  },
+  {
+    "file": "assets/main/sound/system_013.mp3",
+    "hash": "50c071cb2ee38de7b00df052fa8ddf44"
+  },
+  {
+    "file": "assets/main/sound/system_014.mp3",
+    "hash": "2f7e51a2e35d9a542ec36848778c76c4"
+  },
+  {
+    "file": "assets/main/sound/system_015.mp3",
+    "hash": "dbcf03193987b174eb4e6f00f4e9249d"
+  },
+  {
+    "file": "assets/main/sound/system_016.mp3",
+    "hash": "bd56c26f7d1ddac87add38c65619ba9a"
+  },
+  {
+    "file": "assets/main/sound/system_017.mp3",
+    "hash": "f8fac464462adb48884d112db32a7bb1"
+  },
+  {
+    "file": "assets/main/sound/system_0170.mp3",
+    "hash": "c7682cb48922c87aa11cdc191c7117f1"
+  },
+  {
+    "file": "assets/main/sound/system_018.mp3",
+    "hash": "101b0a0a123e809b31308115a6dcf482"
+  },
+  {
+    "file": "assets/main/sound/system_019.mp3",
+    "hash": "71e554af5633be87f7d4e56dda897fe8"
+  },
+  {
+    "file": "assets/main/sound/system_020.mp3",
+    "hash": "9afe264eb89fc8e883ce66f35cbab862"
+  },
+  {
+    "file": "assets/main/sound/system_021.mp3",
+    "hash": "c729e9be6b3e856a722662ba77aa96eb"
+  },
+  {
+    "file": "assets/main/sound/system_022.mp3",
+    "hash": "74a40da62538d3b45bda6f3ffb6ec17e"
+  },
+  {
+    "file": "assets/main/sound/system_023.mp3",
+    "hash": "8edd91fe6942d4955b54095b34772a94"
+  },
+  {
+    "file": "assets/main/sound/system_024.mp3",
+    "hash": "64d726280e8fd40e138f2e1b85eb3f81"
+  },
+  {
+    "file": "assets/main/sound/system_025.mp3",
+    "hash": "6d6dcb34289f8a88a6020eff429151c4"
+  },
+  {
+    "file": "assets/main/sound/system_026.mp3",
+    "hash": "a24d20fda8c4611fe1ade56ff506573c"
+  },
+  {
+    "file": "assets/main/sound/system_027.mp3",
+    "hash": "7c14f6b0c1bf408c03cdbf938d5e34a5"
+  },
+  {
+    "file": "assets/main/sound/system_028.mp3",
+    "hash": "64339ac114cc41eccd7358e5c4f7a59b"
+  },
+  {
+    "file": "assets/main/sound/system_029.mp3",
+    "hash": "fb4e34f7091cdeb6430fdd1420bd27b7"
+  },
+  {
+    "file": "assets/main/sound/system_030_LHD.mp3",
+    "hash": "a5a8526489db9a1485d85d2b25f39fbb"
+  },
+  {
+    "file": "assets/main/sound/system_030.mp3",
+    "hash": "06c7870de6a35efcc37d737051cf6915"
+  },
+  {
+    "file": "assets/main/sound/system_031_LHD.mp3",
+    "hash": "f061ab1837625751ac4ace3fc17c3e22"
+  },
+  {
+    "file": "assets/main/sound/system_031.mp3",
+    "hash": "a81dfce9ffdbe6adaaa9576a7d6a00ca"
+  },
+  {
+    "file": "assets/main/sound/system_032.mp3",
+    "hash": "4470f370540c6ac5fa63ca25ef9bdbc3"
+  },
+  {
+    "file": "assets/main/sound/system_033.mp3",
+    "hash": "5b305d0eb11826e420c8adacc3175d8b"
+  },
+  {
+    "file": "assets/main/sound/system_034.mp3",
+    "hash": "095e5141ca8b1794f4bf46d946b095db"
+  },
+  {
+    "file": "assets/main/sound/system_035.mp3",
+    "hash": "07182a56bdef83780f837ce6e9d3e75e"
+  },
+  {
+    "file": "assets/main/sound/system_036.mp3",
+    "hash": "3e1d1e9e46e857c8df5456dca712bbd8"
+  },
+  {
+    "file": "assets/main/sound/system_037.mp3",
+    "hash": "1b1f66bc5d73cd7b5bffd3a3a50827b0"
+  },
+  {
+    "file": "assets/main/sound/system_038.mp3",
+    "hash": "789ac002bceac938415bfe67816527c7"
+  },
+  {
+    "file": "assets/main/sound/system_050.mp3",
+    "hash": "07b153f0eaaa822c0810b0b7b29d995e"
+  },
+  {
+    "file": "assets/main/sound/system_051.mp3",
+    "hash": "b51da1c2fa581ec5a3032939f6b76b92"
+  },
+  {
+    "file": "assets/main/sound/system_052.mp3",
+    "hash": "4e6015189677035b34e4358b99fdaefa"
+  },
+  {
+    "file": "assets/main/sound/system_053.mp3",
+    "hash": "a676785ee72521d1687f3dace77922e0"
+  },
+  {
+    "file": "assets/main/sound/system_054.mp3",
+    "hash": "6ef54f01e2c686f58b75bcae27f85bd7"
+  },
+  {
+    "file": "assets/main/sound/system_055.mp3",
+    "hash": "dc7fe006535eca9481dffb625f09fa01"
+  },
+  {
+    "file": "assets/main/sound/system_056.mp3",
+    "hash": "2bb048f1ae211dd1458cd32730042e09"
+  },
+  {
+    "file": "assets/main/sound/system_057.mp3",
+    "hash": "4a13d85bfe7b60ce1b59ef4ce8c9e756"
+  },
+  {
+    "file": "assets/main/sound/system_058.mp3",
+    "hash": "979ff26186581862c0810fb1a966f817"
+  },
+  {
+    "file": "assets/main/sound/system_059.mp3",
+    "hash": "ca27d7a09b16b06cb4729069494bed9f"
+  },
+  {
+    "file": "assets/main/sound/system_060.mp3",
+    "hash": "ba99a773f7a772922662ac9179c52a78"
+  },
+  {
+    "file": "assets/main/sound/system_061.mp3",
+    "hash": "cc7f4985aedfd7cc1d644e90766730bd"
+  },
+  {
+    "file": "assets/main/sound/system_062.mp3",
+    "hash": "98242cb1f7b7946daa3658da4a3ee234"
+  },
+  {
+    "file": "assets/main/sound/system_p0.mp3",
+    "hash": "95d660a33367b09bfc2acd3828666975"
+  },
+  {
+    "file": "assets/main/sound/system_p1.mp3",
+    "hash": "0f49e57e17e7c85c6e872a66c3c03f7e"
+  },
+  {
+    "file": "assets/main/sound/system_p10.mp3",
+    "hash": "9d9740483a05dae8bf75c99addcd28d3"
+  },
+  {
+    "file": "assets/main/sound/system_p11.mp3",
+    "hash": "fda98ead8cfe245b07ada55264b41b8b"
+  },
+  {
+    "file": "assets/main/sound/system_p12.mp3",
+    "hash": "85e797827e2c6a92adc722b9a9227307"
+  },
+  {
+    "file": "assets/main/sound/system_p13.mp3",
+    "hash": "5fba555f636a08ff66b9871e264d4a65"
+  },
+  {
+    "file": "assets/main/sound/system_p2.mp3",
+    "hash": "302c1e18f8150a831aa85777b1df0b77"
+  },
+  {
+    "file": "assets/main/sound/system_p3.mp3",
+    "hash": "8dbfbc1130d3844718b19e6c2cffc718"
+  },
+  {
+    "file": "assets/main/sound/system_p4.mp3",
+    "hash": "b4c6cf32466d9fa29c93804a973ca3ed"
+  },
+  {
+    "file": "assets/main/sound/system_p5.mp3",
+    "hash": "61f60cc8c2fc123f9af4e7ded3eac311"
+  },
+  {
+    "file": "assets/main/sound/system_p6.mp3",
+    "hash": "b621a92b28831d535a2138de6e8e9000"
+  },
+  {
+    "file": "assets/main/sound/system_p7.mp3",
+    "hash": "54fd4d4c3b5276c67c91802bada8f66a"
+  },
+  {
+    "file": "assets/main/sound/system_p8.mp3",
+    "hash": "f65027da60f0ae5416afe46e5e29d63f"
+  },
+  {
+    "file": "assets/main/sound/system_p9.mp3",
+    "hash": "c26136dd0e760470e6b7aafda3481cf2"
+  },
+  {
+    "file": "assets/main/sound/system_welcome.mp3",
+    "hash": "7ae0c1936a15584310b9d7c3092edad6"
+  },
+  {
+    "file": "assets/main/waysheet/ludan_3.png",
+    "hash": "0220960bc8e17c43396297896139ba59"
+  },
+  {
+    "file": "assets/main/waysheet/ludan_l_1.png",
+    "hash": "e1beec367ce3b760b074abab63eb3c5c"
+  },
+  {
+    "file": "assets/main/waysheet/ludan_l.png",
+    "hash": "e1ac53b6a7275029f87c63f3dbc25bf1"
+  },
+  {
+    "file": "assets/myproto/bacc_message.proto",
+    "hash": "800fa549dc8f174e56dc1ca239a0d54e"
+  },
+  {
+    "file": "assets/myproto/common_server_message.proto",
+    "hash": "cbc3af7d6a34534b1eeecc8913a3c7f1"
+  },
+  {
+    "file": "assets/myproto/game_server_message.proto",
+    "hash": "2381a73610e9878c4e90855b1a8c5c99"
+  },
+  {
+    "file": "assets/myproto/gate_server_message.proto",
+    "hash": "954a5e48fca1be8ab74b643e4b274836"
+  },
+  {
+    "file": "assets/myproto/logon_server_message.proto",
+    "hash": "342ce2dd6bec580dcf3fde4060cee161"
+  },
+  {
+    "file": "index.html",
+    "hash": "29ee90dc5cb71630b93dd852521a0603"
+  },
+  {
+    "file": "js/comm/base.js",
+    "hash": "01c7a227ec55848158a0c9392311a2d9"
+  },
+  {
+    "file": "js/comm/data.js",
+    "hash": "c4bb53f6a24eff46673e510c2d5e6756"
+  },
+  {
+    "file": "js/comm/helper.js",
+    "hash": "f8a6505968f5735459506a8ea12e3417"
+  },
+  {
+    "file": "js/comm/net.js",
+    "hash": "afedcca93d526c62c733ff4bf022f074"
+  },
+  {
+    "file": "js/comm/ui.js",
+    "hash": "232cc127a97e580b7c9879b25c83854d"
+  },
+  {
+    "file": "js/conf.js",
+    "hash": "750b53a7b5f62abd72dd7d67ac82253f"
+  },
+  {
+    "file": "js/core/require.js",
+    "hash": "088dd2930717d3f9d3d6644a4366b73d"
+  },
+  {
+    "file": "js/display/display.js",
+    "hash": "9469d878fac28b665122d23707026389"
+  },
+  {
+    "file": "js/display/ui.js",
+    "hash": "48bd745d983933cd6ef18ddd8b221915"
+  },
+  {
+    "file": "js/game.js",
+    "hash": "9c4472ed79e4a6c238414a65b20b396d"
+  },
+  {
+    "file": "js/game/baccarat.js",
+    "hash": "55db8696a644892efe3e0a72c44c881b"
+  },
+  {
+    "file": "js/game/lobby.js",
+    "hash": "7e18cba07dc636219f4d9725ff647e83"
+  },
+  {
+    "file": "js/mgr/net.js",
+    "hash": "7f19b9e995618d7577664610c56b1fea"
+  },
+  {
+    "file": "js/mgr/platform.js",
+    "hash": "1838b28d4599c587ec00535b4d7c202b"
+  },
+  {
+    "file": "js/utils/Long.js",
+    "hash": "cb452f183d97f37a7f3b8abc9e3cc65f"
+  },
+  {
+    "file": "js/utils/md5.js",
+    "hash": "4caf00156a538c457f3a8a82e2d20794"
+  },
+  {
+    "file": "js/utils/PacketBuffer.js",
+    "hash": "4fc4514ae4481e4de55840f8b8b2cd69"
+  },
+  {
+    "file": "js/utils/qrcode.js",
+    "hash": "19a8a4b6cd52867c8e4e75defbcb94c4"
+  },
+  {
+    "file": "js/utils/utils.js",
+    "hash": "830991deeaa72b88d609a05c85a1ce54"
+  },
+  {
+    "file": "js2/comm/base.js",
+    "hash": "01c7a227ec55848158a0c9392311a2d9"
+  },
+  {
+    "file": "js2/comm/data.js",
+    "hash": "c4bb53f6a24eff46673e510c2d5e6756"
+  },
+  {
+    "file": "js2/comm/helper.js",
+    "hash": "b96377361bf5506fe9967d59ca418aef"
+  },
+  {
+    "file": "js2/comm/net.js",
+    "hash": "afedcca93d526c62c733ff4bf022f074"
+  },
+  {
+    "file": "js2/comm/ui.js",
+    "hash": "232cc127a97e580b7c9879b25c83854d"
+  },
+  {
+    "file": "js2/conf.js",
+    "hash": "750b53a7b5f62abd72dd7d67ac82253f"
+  },
+  {
+    "file": "js2/core/require.js",
+    "hash": "088dd2930717d3f9d3d6644a4366b73d"
+  },
+  {
+    "file": "js2/display/display.js",
+    "hash": "9469d878fac28b665122d23707026389"
+  },
+  {
+    "file": "js2/display/ui.js",
+    "hash": "48bd745d983933cd6ef18ddd8b221915"
+  },
+  {
+    "file": "js2/game.js",
+    "hash": "0df3ce76de0d33187d510a1413b0422d"
+  },
+  {
+    "file": "js2/game/baccarat.js",
+    "hash": "1c5291e2705736230b45dfa197254756"
+  },
+  {
+    "file": "js2/game/lobby.js",
+    "hash": "4137dad12b360b36821a7a1b2b13cb20"
+  },
+  {
+    "file": "js2/mgr/net.js",
+    "hash": "41021cba4054fb7e0a582524fc05f6ee"
+  },
+  {
+    "file": "js2/mgr/platform.js",
+    "hash": "1838b28d4599c587ec00535b4d7c202b"
+  },
+  {
+    "file": "js2/ui/layaUI.max.all.js",
+    "hash": "8200d4acd194a493df80d2d6c5cba472"
+  },
+  {
+    "file": "js2/utils/Long.js",
+    "hash": "cb452f183d97f37a7f3b8abc9e3cc65f"
+  },
+  {
+    "file": "js2/utils/md5.js",
+    "hash": "4caf00156a538c457f3a8a82e2d20794"
+  },
+  {
+    "file": "js2/utils/PacketBuffer.js",
+    "hash": "4fc4514ae4481e4de55840f8b8b2cd69"
+  },
+  {
+    "file": "js2/utils/qrcode.js",
+    "hash": "19a8a4b6cd52867c8e4e75defbcb94c4"
+  },
+  {
+    "file": "js2/utils/utils.js",
+    "hash": "830991deeaa72b88d609a05c85a1ce54"
+  },
+  {
+    "file": "libs/bytebuffer.js",
+    "hash": "c301aa56dc197e44f36d51987045cc98"
+  },
+  {
+    "file": "libs/laya.ani.js",
+    "hash": "09eab71cd3087bca250ae37eb7dbb258"
+  },
+  {
+    "file": "libs/laya.core.js",
+    "hash": "20bf6beaa8b6711081d5eb049cec4c64"
+  },
+  {
+    "file": "libs/laya.d3.js",
+    "hash": "257f8b2d4301d9b500bdbb5def961158"
+  },
+  {
+    "file": "libs/laya.d3Plugin.js",
+    "hash": "c90b70a7b9cf5b6535c49e2cdf06d83d"
+  },
+  {
+    "file": "libs/laya.debugtool.js",
+    "hash": "eb1b708dec7abd72f7069de38381448e"
+  },
+  {
+    "file": "libs/laya.device.js",
+    "hash": "20aa401ab970e19a2f1ce6a8e22352f6"
+  },
+  {
+    "file": "libs/laya.filter.js",
+    "hash": "9850d02ffc8c79d1895ac9ea0b9db408"
+  },
+  {
+    "file": "libs/laya.html.js",
+    "hash": "5b755b47ed56c88de37be0c3afa0706a"
+  },
+  {
+    "file": "libs/laya.particle.js",
+    "hash": "f127e7aaa40daf882707f05733f758df"
+  },
+  {
+    "file": "libs/laya.pathfinding.js",
+    "hash": "e0be4d7d90c5a19e45f0701bc2d43d3d"
+  },
+  {
+    "file": "libs/laya.tiledmap.js",
+    "hash": "434cc5a9f989afc95631fa2c5342e7ea"
+  },
+  {
+    "file": "libs/laya.ui.js",
+    "hash": "66159e68a9b9816051c1eb31c7814703"
+  },
+  {
+    "file": "libs/laya.webgl.js",
+    "hash": "228d781164721886c6b7a63e4ed09b77"
+  },
+  {
+    "file": "libs/LayaRender.js",
+    "hash": "0433badb5c7f2a087e50d8f1b5d15bde"
+  },
+  {
+    "file": "libs/Long.js",
+    "hash": "cb452f183d97f37a7f3b8abc9e3cc65f"
+  },
+  {
+    "file": "libs/matter-RenderLaya.js",
+    "hash": "e4ef9118ee169fe4bd60d78bc53135ae"
+  },
+  {
+    "file": "libs/matter.js",
+    "hash": "6e5d09b6fdc50284ab96242898a09ada"
+  },
+  {
+    "file": "libs/min/laya.ani.min.js",
+    "hash": "1193e85f6b08996270c696ea80e75db7"
+  },
+  {
+    "file": "libs/min/laya.core.min.js",
+    "hash": "5e8b5a58deacdb5c9fb409bd621eda23"
+  },
+  {
+    "file": "libs/min/laya.d3.min.js",
+    "hash": "4dedebffec2ce385fffa113a0e247c09"
+  },
+  {
+    "file": "libs/min/laya.d3Plugin.min.js",
+    "hash": "e94084f681e891fc60a07d3c17fc75a4"
+  },
+  {
+    "file": "libs/min/laya.debugtool.min.js",
+    "hash": "3c780d98928844bf5cd6179f7d002d75"
+  },
+  {
+    "file": "libs/min/laya.device.min.js",
+    "hash": "e58367ae7dc600812e24db44a18cd52a"
+  },
+  {
+    "file": "libs/min/laya.filter.min.js",
+    "hash": "04dd0e7ba2571107e05e1d903af6d67b"
+  },
+  {
+    "file": "libs/min/laya.html.min.js",
+    "hash": "493341fb4a24ad698466f7610718a7b1"
+  },
+  {
+    "file": "libs/min/laya.particle.min.js",
+    "hash": "08b530ac0dbfc3d4fcb9b1ddc98e268a"
+  },
+  {
+    "file": "libs/min/laya.pathfinding.min.js",
+    "hash": "3986c85bc3118ac0d558333f5cfa1b66"
+  },
+  {
+    "file": "libs/min/laya.tiledmap.min.js",
+    "hash": "d977874799479e111aae7fc0f46f8795"
+  },
+  {
+    "file": "libs/min/laya.ui.min.js",
+    "hash": "6e118f09c9a9ca95c682382c1322e5a6"
+  },
+  {
+    "file": "libs/min/laya.webgl.min.js",
+    "hash": "a4ad003be693a496abf95e9a71dfe802"
+  },
+  {
+    "file": "libs/protobuf.js",
+    "hash": "02441b1ffe3a97f44996273f0cefc370"
+  },
+  {
+    "file": "libs/worker.js",
+    "hash": "a3c7f3ba52e6d1b6d5ff70e24bac540c"
+  },
+  {
+    "file": "loading_bg.png",
+    "hash": "9271442e88189ee753c0da3be1ca7c48"
+  },
+  {
+    "file": "loading.html",
+    "hash": "20ca9c6e603b1428d0eef5e4e26eb7ea"
+  },
+  {
+    "file": "res/atlas/.rec",
+    "hash": "8363acaeab9cbb099b59b78a44127ca6"
+  },
+  {
+    "file": "res/atlas/assets/baccarat/tex.json",
+    "hash": "75bf615a2f20734851dac81230b0b163"
+  },
+  {
+    "file": "res/atlas/assets/baccarat/tex.png",
+    "hash": "3dae70478964295580b6402012d24d09"
+  },
+  {
+    "file": "res/atlas/assets/baccarat/tex/chat.json",
+    "hash": "0e33860b2e1de8256a30c3302adcbcbb"
+  },
+  {
+    "file": "res/atlas/assets/baccarat/tex/chat.png",
+    "hash": "e19ee9eba71c053bfc321a65ff18d889"
+  },
+  {
+    "file": "res/atlas/assets/baccarat/tex/chips.json",
+    "hash": "e4ff208a783a1271547938954cb46d70"
+  },
+  {
+    "file": "res/atlas/assets/baccarat/tex/chips.png",
+    "hash": "5829e745057b4fa212daa563df14fee1"
+  },
+  {
+    "file": "res/atlas/assets/baccarat/tex/effect.json",
+    "hash": "4fb757f08f2615041b00f9a025d3890f"
+  },
+  {
+    "file": "res/atlas/assets/baccarat/tex/effect.png",
+    "hash": "3a7067a0d969ca9589f411de95d2de18"
+  },
+  {
+    "file": "res/atlas/assets/baccarat/tex/playerlist.json",
+    "hash": "3500e00f1c6a9b68bc92cf648ba91e7f"
+  },
+  {
+    "file": "res/atlas/assets/baccarat/tex/playerlist.png",
+    "hash": "7901c370ed70dbe014cf0dd635ffa91c"
+  },
+  {
+    "file": "res/atlas/assets/main/bank.json",
+    "hash": "7e9bd76f9c18933d863216a2002b71fd"
+  },
+  {
+    "file": "res/atlas/assets/main/bank.png",
+    "hash": "54a174296915b6b783e9030a30dffd12"
+  },
+  {
+    "file": "res/atlas/assets/main/bank/bankCharge.json",
+    "hash": "9a8706e24fb82dfdceea610df2a37d49"
+  },
+  {
+    "file": "res/atlas/assets/main/bank/bankCharge.png",
+    "hash": "97113f11ee37d8d178d47e167e5c261b"
+  },
+  {
+    "file": "res/atlas/assets/main/bank/rechargeChip.json",
+    "hash": "2cc4cc5fa91073d641bde0724d47da3b"
+  },
+  {
+    "file": "res/atlas/assets/main/bank/rechargeChip.png",
+    "hash": "ef034428cc02763ab5f1b10b74d1f647"
+  },
+  {
+    "file": "res/atlas/assets/main/bankIcon.json",
+    "hash": "ace0ff6be8fdd730a417ff73c8f85c57"
+  },
+  {
+    "file": "res/atlas/assets/main/bankIcon.png",
+    "hash": "8d3f511bd72faba5e2558f94706fee9c"
+  },
+  {
+    "file": "res/atlas/assets/main/card.json",
+    "hash": "4374b204a0b0ce5cf47a80f7244373c0"
+  },
+  {
+    "file": "res/atlas/assets/main/card.png",
+    "hash": "914de9a4cd3d5888dffb4106f0266d8e"
+  },
+  {
+    "file": "res/atlas/assets/main/common/error.json",
+    "hash": "67d3604120fce75f4dcba3558257ec31"
+  },
+  {
+    "file": "res/atlas/assets/main/common/error.png",
+    "hash": "d8d3142ee44edc24312437de67e2c8dd"
+  },
+  {
+    "file": "res/atlas/assets/main/common/loading.json",
+    "hash": "a122727612a4d9c83f9e834f5f5fa369"
+  },
+  {
+    "file": "res/atlas/assets/main/common/loading.png",
+    "hash": "16b607db0a6797872080fc7e38d8a0fc"
+  },
+  {
+    "file": "res/atlas/assets/main/common/marquee.json",
+    "hash": "352acfc79451da9b13bcdcab56bdb98d"
+  },
+  {
+    "file": "res/atlas/assets/main/common/marquee.png",
+    "hash": "d946d6ae923786233e9c690a19448e66"
+  },
+  {
+    "file": "res/atlas/assets/main/emoji.json",
+    "hash": "69e75b407d64ed3cdec868d0920a04c9"
+  },
+  {
+    "file": "res/atlas/assets/main/emoji.png",
+    "hash": "5a1b26243dce28974e3987845211789b"
+  },
+  {
+    "file": "res/atlas/assets/main/head.json",
+    "hash": "371ee86b9aabb1b46df203aa15814a8a"
+  },
+  {
+    "file": "res/atlas/assets/main/head.png",
+    "hash": "e729bf6a4442142f9db7af5ca6b82545"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp.json",
+    "hash": "5ca5c16f4ce82562bc53f98ceda21685"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp.png",
+    "hash": "28f51b7c90a7e54c0d7a0fe5be1706fc"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/bindParent.json",
+    "hash": "f62014ce3b60364aa45345ef400192a0"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/bindParent.png",
+    "hash": "87139a4ba3fd938ca976e0ff79493ef3"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/bindPhone.json",
+    "hash": "daa3964fa82897c0a33e28ae20b4626b"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/bindPhone.png",
+    "hash": "4ccdc629e5167573a5ca28d7ee2746d1"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/changeHead.json",
+    "hash": "0453889166967d5f55abb41e92f5f459"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/changeHead.png",
+    "hash": "c5ede6048281f841038780ea56caf53e"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/gambledetail.json",
+    "hash": "67a3b88b0b9ee05611aa0041f561f998"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/gambledetail.png",
+    "hash": "a6c9582c3f08b6213d59dd44ea29ef09"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/game_spread.json",
+    "hash": "c5cc9b4b5ebd6c6e96da4c3f52517160"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/game_spread.png",
+    "hash": "199bdfc7a0a6989140a0606840bda85c"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/mail.json",
+    "hash": "9fdfe9a945134e9adc817a0048a4fb8c"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/mail.png",
+    "hash": "3aa76e4add37c542f655bb57e400e632"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/rank.json",
+    "hash": "cabd0c56ce6ec3935ccb5630461df0cd"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/rank.png",
+    "hash": "b1757faf2c867a4a26399d7ab47e3127"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/service.json",
+    "hash": "2fe02b4fd8a924c1b0f997f40916d452"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/service.png",
+    "hash": "e962bbae1370ca78beae2962c0d06264"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/syssetting.json",
+    "hash": "4130541b1f9b5c0505a212c2ace23287"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/syssetting.png",
+    "hash": "e63706da8b5b1c82ddfa0e22dde85124"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/vip.json",
+    "hash": "f594d1ee93de4b8578c0d99929b475e4"
+  },
+  {
+    "file": "res/atlas/assets/main/lobby/sp/vip.png",
+    "hash": "fd09ebf525910c306c3f20d8d2e413ec"
+  },
+  {
+    "file": "res/atlas/assets/main/login.json",
+    "hash": "b19d5360ac3e026a88f959a8fd5584cc"
+  },
+  {
+    "file": "res/atlas/assets/main/login.png",
+    "hash": "3082cf40cdfaab839bfd3415a5fe276a"
+  },
+  {
+    "file": "res/atlas/assets/main/login/num.json",
+    "hash": "3c67590d5037619ee670041cdf4b26b0"
+  },
+  {
+    "file": "res/atlas/assets/main/login/num.png",
+    "hash": "2357c0639aa017752278aa36ce2d4d60"
+  },
+  {
+    "file": "res/atlas/assets/main/public.json",
+    "hash": "b24d12701bdf7851a69c166bf0fa7911"
+  },
+  {
+    "file": "res/atlas/assets/main/public.png",
+    "hash": "2c651310b5f9fd1ccd7340914b6d229a"
+  },
+  {
+    "file": "res/atlas/assets/main/qrCode.json",
+    "hash": "6c3364461ad7f5260bb6ded299e2096a"
+  },
+  {
+    "file": "res/atlas/assets/main/qrCode.png",
+    "hash": "00f36e5afa16d0eab744d5294ff4de32"
+  },
+  {
+    "file": "res/atlas/assets/main/waysheet.json",
+    "hash": "6943f91f443f914ef3e95498756b78f7"
+  },
+  {
+    "file": "res/atlas/assets/main/waysheet.png",
+    "hash": "3fc1f56ec72029e2ab0d5d55d426324e"
+  },
+  {
+    "file": "unpack.json",
+    "hash": "e9aafacc55cbd43a1970182e5d13dd05"
+  }
+]

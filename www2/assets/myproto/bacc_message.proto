@@ -1,0 +1,250 @@
+syntax = "proto2";
+
+package message;
+
+message	BroadcastCardPair {
+	required int32 PairType = 1;		
+	required int32 PlayerCount = 2;	
+	repeated int32 UesrId = 3;
+	repeated int32 SeatId = 4;
+	repeated int64 BankerWinMoney = 5;
+	repeated int64 PlayerWinMoney = 6;
+	repeated int64 TotalWinMoney = 7;
+	repeated int64 TotalMoney = 8;
+	
+}
+
+
+message	BroadcastUserBooing {
+	required int32 UserId = 1;		
+	required int32 ItemId = 2;	
+}
+
+message	BroadcastUpdateInfo {
+	required int64 Money = 1;	
+}
+
+message	BroadcastGameLog {
+	required int32 ErrorCode = 1;	
+	required int32 Count = 2;	
+	repeated int64 Time = 3;	
+	repeated int64 TotalMoney = 4;	
+	repeated string BetLog = 5;	
+	repeated string GameLog = 6;
+	required int32 TotalCount = 7;
+	required int32 StartIndex = 8;
+}
+
+
+message	NoticeGameStart {
+	required int32 LeftCount = 1;
+	optional int32 FirstCard = 2;
+	optional int32 CutCard = 3;	
+	optional int32 BlackPos = 4;
+	optional int32 PlayerCount = 5; 	
+	optional int32 APlayerCount = 6;    
+}
+
+
+message	NoticeStopChip {
+	optional int32 BankerId = 1;
+	optional int32 PlayerId = 2;		
+}
+
+message NoticeDealHeadCards {
+	repeated int32 PlayerCard = 1;		
+	repeated int32 BankerCard = 2;	
+}
+
+message NoticeDealExtraCards {
+	repeated int32 PlayerCard = 1;		
+	repeated int32 BankerCard = 2;	
+}
+
+message NoticeFlopCard {
+	repeated int32 Card = 1;		
+	required int32 Point = 2;		
+	required int32 PlayerType = 3; 
+}
+
+message NoticeFlopExtraCard {
+	required int32 Card = 1;		
+	required int32 Point = 2;		
+	required int32 PlayerType = 3; 
+}
+
+message GameOverInfo {
+	required int32 UserId = 2;
+	required int32 SeatId = 3;
+	required int64 TurnMoney = 4;
+	required int64 TotalMoney = 5;
+}
+message	BroadcastGameOver {
+	required int32 WinnerType = 1;
+	repeated int32 UserId = 2;
+	repeated int32 SeatId = 3;
+	repeated int64 TurnMoney = 4;
+	repeated int64 TotalMoney = 5;
+}
+
+
+message	BroadcastGameRecord {
+	repeated int32 ResultType = 1;
+	repeated int32 PairType = 2;			
+}
+
+
+message	BroadcastDealHndCard {
+	repeated int32 PlayerCards = 1;	
+	required int32 PlayerPoint = 2;
+	repeated int32 BankerCards = 3;
+	required int32 BankerPoint = 4;	
+}
+
+
+message	BroadcastDealHeadCards {	
+	repeated int32 PlayerCards = 1;	
+	repeated int32 BankerCards = 2;
+}
+
+
+message	BroadcastUserBet {
+	required int32 UserId = 1;	
+	required int32 SeatId = 2;	
+	required int32 BetId = 3;  	
+	required int64 BetMoney = 4;
+	required int64 UserMoney = 5;	
+}
+
+
+message	BroadcastCancelBet {
+	required int32 UserId = 1;	
+	required int32 SeatId = 2;	
+	required int64 Money = 3;  		
+}
+
+
+message	BroadcastStartQiePai {
+	required int64 QiePaiTime = 1;		
+	required int32 UserId = 2;	
+	required string UserName = 3;	
+}
+
+
+message	RequestUserBet  {
+	required int64 BetMoney = 1;		
+	required int32 BetId = 2;	
+}
+
+message UserBetInfo {
+	repeated int64 BetScore = 1;
+	required int32 BetUserId = 2;
+}
+
+message	BroadcastSceneGame  {
+	required int32 GameType = 1;		
+	required int32 UserCount = 2;		
+	required int32 LeftCount = 3;	
+	required int64 LowerLimit = 4;	
+	required int64 UpperLimit = 5;
+	required int64 DrawLowerLimit = 6;
+	required int64 DrawUpperLimit = 7;
+	required int64 PairLowerLimit = 8;	
+	required int64 PairUpperLimit = 9;
+	required int32 TianGongCount = 10;
+	required int32 BetTime = 11;
+	required int32 RubCardIime = 12;
+	required int32 RubExtraCardTime = 13;	
+	required int32 SelfSeatId = 14;	
+	repeated int64 BetMoney = 15;	
+	repeated int32 PlayerCards = 16;	
+	required int32 PlayerPoint = 17;
+	repeated int32 BankerCards = 18;
+	required int32 BankerPoint = 19;	
+	required int32 LeftTime = 20;
+	required int32 GameState = 21;
+	required int32 SelfState = 22;	
+	repeated UserBetInfo UserBetScore = 23;
+	optional int32 BankerId = 24;
+	optional int32 PlayerId = 25;
+	optional int32 ServerId = 26;
+	optional int32 PokerBoots = 27;	
+	optional int32 LeftPokerBoots = 28;	
+	optional int32 RoomId = 29;	
+}
+
+
+message	RequestUserSit  {	
+	required int32 SeatId = 1;	
+}
+
+
+message	RequestUserStand  {	
+	required int32 SeatId = 1;	
+}
+
+
+message	BroadcastUserSit {
+	enum ErrorCodeType {
+		RPDI_Success 		= 0;	
+		RPDI_NotEmpty		= 1;	
+		RPDI_GoldNotEnogth	= 3;	
+	}
+	required ErrorCodeType ErrorCode = 1;  
+	optional int32 UesrId = 2;		
+	optional int32 SeatId = 3;	
+	optional string UserName = 4;	
+	optional int64 Money = 5;
+}
+
+
+message	BroadcastUserStand  {
+	required int32 UesrId = 1;		
+	required int32 SeatId = 2;	
+}
+
+
+message	RequestFlipCard  {
+	required int32 Type = 1;			
+}
+
+message	RequestFlipAction  {
+	required int32 Index = 1;
+	optional int32 Type = 2;
+	optional int32 Mx = 3;
+	optional int32 My = 4;
+}
+
+message	BroadcastFlipAction {
+	required int32 Index = 1;		
+	required int32 Type = 2;	
+	required int32 Mx = 3;
+	required int32 My = 4;
+}
+
+message	RequestBooing {
+	required int32 ItemId = 1;
+}
+
+message	RequestOpenCard {
+	required int32 CardIndex  = 1;
+}
+
+message	BroadcastOpenCard {
+	required int32 PlayerType = 1;
+	required int32 CardIndex  = 2;
+}
+
+message	BroadcastResetBetLeader {
+  required int32 BetId = 1;
+  required int32 SeatId = 2;
+}
+
+
+
+
+
+
+
+
+

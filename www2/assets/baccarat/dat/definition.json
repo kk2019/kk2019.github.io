@@ -1,0 +1,80 @@
+{
+  "GAME_STATE": {
+    "USER_READY": 1,
+    "USER_PUT": 3,
+    "SEND_CARD": 2,
+    "GAME_RESULT": 4,
+    "GAME_END": 12
+  },
+  "CHAIR_STATUS": {
+    "CHAIR_EMPTY": 0,
+    "CHAIR_WAITREADY": 1,
+    "CHAIR_READY": 2,
+    "CHAIR_PLAYING": 3
+  },
+  "WIN_STATE": {
+    "WIN_UNKNOW": -1,
+    "WIN_BANK": 0,
+    "WIN_FARM": 1,
+    "WIN_DEUCE": 2
+  },
+  "PAIR_SIDE": {
+    "BankerPair": 1,
+    "FarmerPair": 2,
+    "Both": 3
+  },
+  "CHIP_AREA": {
+    "ALL": 0,
+    "BANKER": 1,
+    "FARMER": 2,
+    "DEUCE": 3,
+    "BANKERPAIR": 4,
+    "FARMERPAIR": 5,
+    "BANKERRED": 6,
+    "BANKERBLACK": 7,
+    "BANKERSINGLE": 8,
+    "FARMERBLACK": 9,
+    "FARMERRED": 10,
+    "FARMERSINGLE": 11
+  },
+  "Vip_Home": {
+    "minBet": 150,
+    "maxBet": 15000
+  },
+  "ChessRoomType": {
+    "MaJiang": 0,
+    "Baccarat": 1
+  },
+  "CHAT_TYPE": {
+    "SYSTEM": 0,
+    "EMOJI": 1,
+    "SERIF": 2,
+    "SERVICE": 3
+  },
+  "BaccaratRoomType": {
+    "Dragon": 1,
+    "JingMi": 2,
+    "Vip": 3,
+    "LHD1": 4,
+    "LHD2": 5
+  },
+  "D_TYPE": {
+    "GOLD": 1,
+    "DIAMOND": 2,
+    "REBATE_POINT": 3,
+    "CARRYON_GOLD": 4,
+    "BACCARAT_GOLD": 5
+  },
+  "BaccaratSendCardStepJM": {
+    "FarmerFirst": 4,
+    "BankerFirst": 5,
+    "FarmerSecond": 6,
+    "BankerSecond": 7,
+    "Finish": 0
+  },
+  "LOOKCARD_SIDE": {
+    "NONE": 0,
+    "FARMER": 1,
+    "BANKER": 2
+  }
+}

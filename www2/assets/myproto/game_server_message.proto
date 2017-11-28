@@ -1,0 +1,82 @@
+syntax = "proto2";package message;message TablePlayerInfo{	required int32 ChairID				= 1;	
+	required uint32 UserID 				= 2;	
+	required string NickName 			= 3;	
+	required uint32 Level 				= 4;	
+	required uint32 FaceID 				= 5;	
+	required uint32 Gender 				= 6;	
+	required uint32 VipLevel 			= 7;	
+	required uint32 Experience 			= 8;	
+	required int64 Score 				= 9;	
+	required int64 Diamond 				= 10;	
+	required uint64 Lottery 			= 11;	
+	required int32	Status				= 12;	
+	optional string FaceUrl				= 13;	
+    optional string IP				    = 14;	
+}
+message ServerMessageAllPlayersInfo{	enum ErrorCodeType {		ECT_Success 		= 0;	
+		ECT_FullChair		= 1;	
+	}		enum ReasonType {		RT_Normal 		= 0;		
+		RT_ChangeTable	= 1;		
+	}		enum SitDownType{		SDT_New = 0;			
+		SDT_Repeat = 1;			
+	}		required ErrorCodeType ErrorCode 			= 1;   	
+	optional ReasonType Reason  				= 2;	
+	repeated TablePlayerInfo PlayerInfos  		= 3;	
+	optional SitDownType SitdownType 			= 4;    
+}
+message ServerMessageOtherPlayerSitDown{	required TablePlayerInfo PlayerInfos = 1;	
+}
+message ServerMessagePlayerStandUp{	enum ErrorCodeType {		ECT_Success 		= 0;	
+	}		required ErrorCodeType ErrorCode 			= 1;   	
+	optional int32 ChairID						= 2;	
+	optional uint32 UserID 						= 3;	
+}
+message ServerMessageOtherPlayerStandUp{	required int32 ChairID				= 1;	
+	required uint32 UserID 				= 2;	
+}
+message ServerMessagePlayerReady{	enum ErrorCodeType {		ECT_Success 		= 0;	
+		ECT_Repeat			= 1;	
+		ECT_Playing			= 2;    
+	}	required ErrorCodeType ErrorCode 			= 1;   	
+	optional uint32 UserID 						= 2;	
+}
+message ServerMessagePlayerUnReady{	enum ErrorCodeType {		ECT_Success 		= 0;	
+		ECT_NoReady			= 1;	
+	}	required ErrorCodeType ErrorCode 			= 1;   	
+	optional uint32 UserID 				= 2;	
+}
+message ServerMessageOtherPlayerReady{	required int32 ChairID				= 1;	
+	required uint32 UserID 				= 2;	
+}
+message ServerMessageOtherPlayerUnReady{	required int32 ChairID				= 1;	
+	required uint32 UserID 				= 2;	
+}
+message ServerMessagePlayerDisconnect{	required int32 ChairID				= 1;	
+	required uint32 UserID 				= 2;	
+}
+message ServerMessagePlayerReconnect{	required int32 ChairID				= 1;	
+	required uint32 UserID 				= 2;	
+}message ServerMessageUserScore {	enum ScoreChangeType {		Game      = 0; 
+		Flee      = 1; 
+		Revenue   = 2; 
+		Recharge  = 3; 
+		OnLine	  = 4; 
+		Charity	  = 5; 
+		Dealer    = 6; 
+		System 	  = 7; 
+		RoomCard  = 8; 
+	}	optional int64 VarScore 		= 1;	
+	optional int64 Score 			= 2;	
+	optional int64 VarDiamond 		= 3;	
+	optional int64 Diamond 			= 4;	
+	required ScoreChangeType Type	= 5;	
+	optional uint32 UserID			= 6;	
+	optional int32 ChairID			= 7;	
+}message ServerMessageGameMessage {	required int32	MsgType = 1;			
+	required string Message = 2;			
+}message ServerMessageKickPlayer{	enum ErrorCodeType {		NoEnoughMoney 		= 0;	
+		GameOperateError	= 1;	
+	}		required ErrorCodeType ErrorCode 	= 1;   	
+}message SameIp {	required string IP = 1;			
+	repeated int32 ChairId = 2;     
+}message ServerMessageSameIP {		repeated SameIp IP = 1;}

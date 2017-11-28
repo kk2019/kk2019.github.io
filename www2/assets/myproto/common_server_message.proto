@@ -1,0 +1,205 @@
+syntax = "proto2";
+
+package message;
+
+message LoginByUserIDRequest {
+	required uint32 	UserID 			    = 1;	
+	required string 	PassWord		 	= 2;	
+	required uint32		KindID				= 6; 	
+	required uint32		ServerID			= 3; 	
+	required string 	ClientIP 			= 4;	
+	required string 	MachineID		 	= 5;	
+}
+
+message RequestLoginByUserID {
+	required uint32 		UserID 			    = 1;	
+	required uint32 		PassWord		 	= 2;	
+}
+
+message ReplyPlayerDetailInfo {
+	enum ErrorCodeType {
+		RPDI_Success 		= 0;	
+		RPDI_PasswdCorrect 	= 1;	
+		RPDI_RepeatLogin	= 2;	
+		RPDI_GoldNotEnogth	= 3;	
+		RPDI_GoldTopLimit	= 4;	
+		RPDI_PlayerCountLimit = 5;	
+		RPDI_VipLimit = 6;			
+		RPDI_ServerClosed = 7;		
+		RPDI_NotBindPhone = 8;		
+		RPDI_Retry = 9;				
+		RPDI_RegisterLimit = 10;	
+		RPDI_VerifyCorrect = 11;	
+		RPDI_RepeatReg = 12;		
+		RPDI_VerifyExpire  = 13;	
+	}
+	required ErrorCodeType ErrorCode 		= 1;   	
+	optional uint32 	UserID 				= 3;	
+	optional string 	NickName 			= 4;	
+	optional uint32 	Level 				= 5;	
+	optional uint32 	FaceID 				= 6;	
+	optional uint32 	Gender 				= 7;	
+	optional uint32 	VipLevel 			= 8;	
+	optional uint32 	Experience 			= 9;	
+	optional string 	MobilePhone 		= 10;	
+	optional int64 		Score 				= 11;	
+	optional int64 		Diamond 			= 12;	
+	optional int64 		Lottery 			= 13;	
+	optional uint64		ServerMask			= 14;	
+	optional string 	ClientVersion		= 15;	
+	optional string 	UpdateUrl			= 16;	
+	optional string 	GameSort			= 17;	
+	optional string 	FaceUrl				= 18;	
+	optional int32 		RoomId				= 19;	
+	optional uint64 	TypeMask			= 20;	
+	optional string 	IPAddr				= 21;	
+	optional string 	TokenId				= 22;	
+	optional int32 		ServerId			= 23;	
+	optional string 	PlayerProp			= 24;	
+}
+
+message OperateError {
+	enum ErrorCodeType {
+		OtherLogin 				= 1; 		
+		BlackUser_Bug 			= 10; 		
+		BlackUser_MuchRegist 	= 11; 		
+	}
+	required ErrorCodeType ErrorCode = 1;
+}
+
+
+message ReplyCharityInfo {
+	required uint32 LeftCounts = 1; 
+}
+
+message ReplyGetCharity {
+	enum ErrorCodeType {
+		Success 		= 0;	
+		NoTimes			= 1; 	
+		MuchScore		= 2;	
+		Other			= 3; 	
+	}
+	required ErrorCodeType ErrorCode 	= 1;	
+	optional uint64 CharityScore = 2; 
+}
+
+
+message RequestSimpleUserInfo {
+	required uint32 UserID = 1; 	
+}
+
+
+message ReplySimpleUserInfo {
+	required uint32 UserID = 1; 	
+	required string NickName = 2;	
+	required uint32 FaceID = 3;		
+	required uint32 Gender = 4;		
+	required uint32 VipLevel = 5;	
+	required uint64 Score = 6;		
+}
+
+
+enum TaskType {
+	LoginTask 		= 1;	
+}
+	
+
+message RequestTaskInfo {
+	required TaskType Type = 1;
+}
+
+message TaskRewardInfo {
+	required uint32 RewardID = 1;		
+	required uint64 RewardCount = 2;	
+}
+
+message TaskConfig {
+	required uint32 Taskid = 1;				
+    required string Name = 2;				
+	required uint32 Next = 3;				
+	required uint32	Cnum = 4;				
+	required uint32 Open = 5;				
+	required uint32 Tnum = 6;				
+	required uint32 Icon = 7;				
+	required uint32 Act  = 8; 				
+	repeated TaskRewardInfo Rewards = 9; 	
+}
+
+message UserTaskInfo {
+	required uint32 Taskid = 1;				
+	required uint32 Cnum = 2;				
+	required uint32 Tnum = 3;				
+}
+
+message ReplyTaskInfo {
+	required TaskType Type = 1;
+	repeated TaskConfig Config = 2;
+	repeated UserTaskInfo Info = 3;
+}
+
+
+message RequestTaskReward {
+	required TaskType Type = 1;
+	required uint32 Taskid = 2;
+}
+
+message ReplyTaskReward {
+	enum ErrorCodeType {
+		Success 		= 0;	
+		NotFinish		= 1; 	
+		NotOpen			= 2;	
+		Gotten			= 3; 	
+		Other			= 4; 	
+	}
+	required ErrorCodeType ErrorCode = 1;
+	optional uint32 TaskID = 2;
+	optional uint64 TaskScore = 3;
+}
+
+message SendMessageRequest {
+	required int32	MsgType = 1;			
+	required string Message = 2;			
+}
+
+message CreatePrivateRequest {
+	required int32 UserID 		= 1;	
+	required string RoomName	= 2;	
+	required int32 RoomType 	= 3;	
+	required int32 PokerBoots	= 4;	
+	required int32 ChipsRange 	= 5;	
+	optional string IPAddr 		= 6;	
+}
+
+message ReplyCreatePrivate {
+	enum ErrorCodeType {
+		Success 		= 0;	
+		CostZero		= 1; 	
+		CostNotEnough	= 2;	
+		CreateRoomFails	= 3; 	
+		SitFalis		= 4; 	
+	}
+	required ErrorCodeType ErrorCode = 1;
+	optional int32 RoomId = 2;
+}
+
+message JoinPrivateRequest {
+	required uint32 UserID 		= 1;	
+	required int32 RoomId 		= 2;	
+	optional string IPAddr 		= 3;	
+}
+
+message ReplyJoinPrivate {
+	enum ErrorCodeType {
+		Success 		= 0;	
+		SitFalis		= 1; 	
+		NoChair			= 2;    
+		GamePlaying		= 3;	
+		NoFind			= 4; 	
+	}
+	required ErrorCodeType ErrorCode = 1;
+	optional int32 RoomId = 2;
+	optional int32 RoomType = 3;
+	optional int32 PokerBoots = 4;	
+	optional int64 ChipsRange = 5;	
+}
+
