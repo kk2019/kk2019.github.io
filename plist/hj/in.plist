@@ -33,13 +33,13 @@
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.enterprise.mygame4</string>
+                <string>com.enterprise.mygame1</string>
                 <key>bundle-version</key>
                 <string>1.0</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>subtitle</key>
-                <string>濠江百家乐</string>
+                <string>濠江会</string>
                 <key>title</key>
                 <string>濠江百家乐</string>
             </dict>
