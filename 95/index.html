@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/download.css?v=10" media="screen" type="text/css">
     <script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
     <style type="text/css">
         .zhezhao{width:100%;height:100%;background-color:#000;filter:alpha(opacity=50);-moz-opacity:0.5;opacity:0.5;position:absolute;left:0px;top:0px;display:none;z-index:1;}
         .tig{padding:0px;position:absolute;top:0px;left:5%;width:90%;z-index:999;display:none}
@@ -204,6 +205,21 @@
     }
 	
 	function downapp(){
+        // alert();
+        var clipboard = new ClipboardJS('.btn1', {
+            text: function() {
+                return window.location.hash;
+            }
+        });
+
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+
 		if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
 			location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hmol/out.plist';
 			showtips();
