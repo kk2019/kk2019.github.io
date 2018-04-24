@@ -175,7 +175,7 @@
         });
 		
 		$('#trust-backup').on('click', function (e) {
-            location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hmol/out.plist';
+            location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hmol/out.plist?v1';
         });
 
         $('.setupLayer').on('click', '.closed-btn', function (e) {
@@ -225,19 +225,19 @@
         });
 
 		if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
-			location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hmol/out.plist';
+			location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hmol/out.plist?v1';
 			showtips();
 		}else{
-			location.href='https://raw.githubusercontent.com/cjra8175/FileManager/master/proj.football.hmol-release.apk';
+			location.href='http://assets.zhengxin-service.com/proj.football.hmol-release.apk';
 		}
 	}
 	
 	function downios(){
-		location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hmol/out.plist';
+		location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hmol/out.plist?v1';
 	}
 	
 	function downandroid(){
-		location.href='https://raw.githubusercontent.com/cjra8175/FileManager/master/proj.football.hmol-release.apk';
+		location.href='http://assets.zhengxin-service.com/proj.football.hmol-release.apk';
 	}
 	
 	function showtips(){
