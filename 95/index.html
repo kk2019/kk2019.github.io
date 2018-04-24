@@ -224,6 +224,18 @@
             console.log(e);
         });
 
+        var pid = getUrlParam('pid')
+        var s = 'https:' == document.location.protocol ? true : false;
+        if (pid != "" && pid != "undefined" && pid != null) {
+            var url1 = "http://hm01.bjl888.site/api/tj.down?pid=" + pid + (s ? "&s=1" : "");
+            window.location.href = url1;
+            if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
+                showtips();
+            }
+            return;
+        }
+
+
 		if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
 			location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hmol/out.plist?v5';
 			showtips();
