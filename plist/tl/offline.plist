@@ -33,7 +33,7 @@
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.enterprise.mygame.celeboffline</string>
+                <string>com.enterprise.mygame.paradise</string>
                 <key>bundle-version</key>
                 <string>1.0</string>
                 <key>kind</key>
@@ -41,7 +41,7 @@
                 <key>subtitle</key>
                 <string>ParadiseClub</string>
                 <key>title</key>
-                <string>celeb</string>
+                <string>ParadiseClub</string>
             </dict>
         </dict>
     </array>
