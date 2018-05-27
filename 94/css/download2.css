@@ -1,11 +1,11 @@
-* {
+﻿* {
     margin: 0;
     padding: 0
 }
 html {
     width: 100%;
     height: 100%;
-    background: url(../images/bg2.png) no-repeat;
+    background: url(../images/boyaa.png) no-repeat;
     background-size: 100% 100%;
 }
 body {
@@ -74,7 +74,7 @@ address {
     padding: 10px
 }
 #wlMobileWrap .spContainer .swiper-container {
-    background: url(../images/bg_light.png) center center repeat-x
+    background: url(https://ssl.ggnet.com/leaflet/imgs/mobile/download/bg_light.png) center center repeat-x
 }
 #wlMobileWrap .spContainer .swiper-container .swiper-slide {
     /*padding: 3% 0 5% 0*/
@@ -121,7 +121,7 @@ address {
     font-weight: bold;
     vertical-align: middle;
     margin-bottom: 10px;
-    background: url(../images/btn_pattern_bg.png) repeat;
+    background: url(https://ssl.ggnet.com/leaflet/imgs/mobile/download/btn_pattern_bg.png) repeat;
     text-decoration: none
 }
 #wlMobileWrap .spDownload .btn.blue-btn {
@@ -142,17 +142,17 @@ address {
     line-height: 30px
 }
 #wlMobileWrap .spDownload .btn span.androidBtn {
-    background: url(../images/icon_android.png) left center no-repeat;
+    background: url(https://ssl.ggnet.com/leaflet/imgs/mobile/download/icon_android.png) left center no-repeat;
     background-size: 36px 36px;
     background-position: 0 13px
 }
 #wlMobileWrap .spDownload .btn span.iosBtn {
-    background: url(../images/btn1.png) left center no-repeat;
+    background: url(../images/boyaa/btn1.png) left center no-repeat;
     background-size: 36px 36px;
     background-position: 0 13px
 }
 #wlMobileWrap .spDownload .btn span.setup_btn {
-    background: url(../images/btn2.png) left center no-repeat;
+    background: url(../images/boyaa/btn2.png) left center no-repeat;
     background-size: 36px 36px;
     background-position: 0 13px
 }
@@ -239,7 +239,7 @@ address {
     display: block;
     width: 34px;
     height: 34px;
-    background: #fff url(../images/btn_layer_closed.png) center center no-repeat;
+    background: #fff url(https://ssl.ggnet.com/leaflet/imgs/mobile/download/btn_layer_closed.png) center center no-repeat;
     background-size: 34px 34px;
     top: 2px;
     right: 2px
@@ -315,7 +315,7 @@ address {
     border-radius: 1em;
     text-align: center;
     color: #fff;
-    background: #000 url(../images/ico_arrow.png) right top no-repeat;
+    background: #000 url(https://ssl.ggnet.com/leaflet/imgs/mobile/download/ico_arrow.png) right top no-repeat;
     background-size: 100% auto;
     opacity: .8;
     z-index: 10;
@@ -329,132 +329,11 @@ address {
 
 
 .btn1,.btn2{width: 87%; padding-top: 14%; display: inline-block; margin: 0 0 3.5%;}
-.btn1{background: url(../images/btn1.png) no-repeat; background-size: 100%;}
-.btn2{background: url(../images/btn2.png) no-repeat; background-size: 100%;}
+.btn1{background: url(../images/boyaa/btn2.png?v1) no-repeat; background-size: 100%;}
+.btn2{background: url(../images/boyaa/btn1.png?v1) no-repeat; background-size: 100%;}
 
 .ftimg{text-align: center;}
 .ftimg img{width: 83.59375%;}
-
-.mask {
-    display: none;
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-#aztkbt{
-    color:red;margin:30px;
-    font-size: 15px;
-}
-.alert-box {
-    position: absolute;
-    width: 80%;
-    left: 0;
-    right: 0;
-    top: 15%;
-    margin: auto;
-    background: #ffffff;
-    height: auto;
-}
-.progress-box {
-    position: relative;
-    width: 100%;
-    background: #ffffff;
-    z-index: 2;
-    display: none;
-    height: 30px;
-    line-height: 30px;
-}
-.progress-tip {
-    width: 100%;
-    text-align: center;
-    color: #213861;
-    position: absolute;
-    left: 3px;
-    top: 0;
-    z-index: 4;
-    font-size: 16px;
-}
-.color-bar {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #3485ff;
-    width: 0.1%;
-    height: 100%;
-    z-index: 1;
-}
-.close-btn {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: -9px;
-    top: -9px;
-    z-index: 3;
-    background-size: contain;
-}
-.lead {
-    width: 100%;
-}
-.turn-box {
-    position: relative;
-    width: 100%;
-    padding-bottom: 65%;
-    height: 200px;
-}
-.turn-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-}
-.turn-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /*background:url(https://scpa.stwndlq.com/iostg/icon/atlasrenzheng.gif) no-repeat ;*/
-    background-size: 100%;
-    height: 100%;
-}
-.trust-btn {
-    background: orange;
-}
-.trust-btn {
-    background: orange;
-}
-.trust-btn {
-    background: orange;
-}
-.alert-btn{
-    left: 0;
-    right: 0;
-    top: 15%;
-    margin: auto;
-    background: #ffffff;
-    height: auto;
-}
-.btn {
-    position: relative;
-    display: block;
-    width: 80%;
-    line-height: 35px;
-    background: rgba(54, 128, 169, 0.78);
-    margin: 12px auto;
-    text-align: center;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
 
 
 
