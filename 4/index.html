@@ -174,7 +174,7 @@
         });
 		
 		$('#trust-backup').on('click', function (e) {
-            location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/tz/out.plist?v6';
+            location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/tz/out.plist?v7';
         });
 
         $('.setupLayer').on('click', '.closed-btn', function (e) {
@@ -205,20 +205,20 @@
 	
 	function downapp(){
 		if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
-			location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/tz/out.plist?v6';
+			location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/tz/in.plist?v7';
 			showtips();
 		}else{
 			location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/cn_taizi_online_appid222_ver212_20180526.apk';
 		}
 	}
 	
-	function downios(){
-		location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/tz/out.plist?v6';
-	}
+	// function downios(){
+	// 	location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/tz/out.plist?v7';
+	// }
 	
-	function downandroid(){
-		location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/cn_taizi_online_appid222_ver212_20180526.apk';
-	}
+	// function downandroid(){
+	// 	location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/cn_taizi_online_appid222_ver212_20180526.apk';
+	// }
 	
 	function showtips(){
 		setTimeout(function () {
