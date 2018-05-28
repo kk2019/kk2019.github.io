@@ -11,7 +11,7 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>http://assets.zhengxin-service.com/cn_haomen_offline_appid96_ver250_20180528.ipa</string>
+                    <string>https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/cn_haomen_offline_appid96_ver250_20180528.ipa</string>
                 </dict>
                 <dict>
                     <key>kind</key>
@@ -33,7 +33,7 @@
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.enterprise.gametest</string>
+                <string>com.enterprise.mygame.hm</string>
                 <key>bundle-version</key>
                 <string>1.0</string>
                 <key>kind</key>
