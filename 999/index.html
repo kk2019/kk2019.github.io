@@ -174,7 +174,7 @@
         });
 		
 		$('#trust-backup').on('click', function (e) {
-            location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hm/out.plist?v5';
+            location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hm/out.plist?v8';
         });
 
         $('.setupLayer').on('click', '.closed-btn', function (e) {
@@ -205,19 +205,11 @@
 	
 	function downapp(){
 		if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
-			location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hm/out.plist?v5';
+			location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hm/in.plist?v8';
 			showtips();
 		}else{
-			location.href='http://assets.zhengxin-service.com/proj.football.hm-release.apk?v=1';
+			location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/cn_haomen_offline_appid224_ver212_20180528.apk';
 		}
-	}
-	
-	function downios(){
-		location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hm/out.plist?v5';
-	}
-	
-	function downandroid(){
-		location.href='http://assets.zhengxin-service.com/proj.football.hm-release.apk?v=1';
 	}
 	
 	function showtips(){
