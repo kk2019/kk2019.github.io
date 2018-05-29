@@ -11,7 +11,7 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>http://assets-source.bjl888.site/th_celeb_casino_appid97_ver250_20180528.ipa</string>
+                    <string>https://raw.githubusercontent.com/cjra8175/FileManager/master/packages/th_celeb_casino_appid97_ver250_201805281456.ipa</string>
                 </dict>
                 <dict>
                     <key>kind</key>
@@ -39,9 +39,9 @@
                 <key>kind</key>
                 <string>software</string>
                 <key>subtitle</key>
-                <string>celeb</string>
+                <string>CelebCasino</string>
                 <key>title</key>
-                <string>celeb</string>
+                <string>CelebCasino</string>
             </dict>
         </dict>
     </array>
