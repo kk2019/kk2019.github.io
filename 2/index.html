@@ -166,7 +166,7 @@
         });
         
         $('#trust-backup').on('click', function (e) {
-            location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/jh/out.plist?v5';
+            location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/jhhm/out.plist?v9';
         });
 
         $('.setupLayer').on('click', '.closed-btn', function (e) {
@@ -197,19 +197,11 @@
     
     function downapp(){
         if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
-                location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/jh/in.plist?v5';
+                location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/jhhm/in.plist?v9';
                 showtips();
         }else{
-                location.href='https://github.com/kk2019/kk2019.github.io/blob/master/jh_21_v171.apk?raw=true';
+                location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/cn_hmjunhao_online_appid228_ver250_20180614.apk';
         }
-    }
-    
-    function downios(){
-        location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/jh/in.plist?v5';
-    }
-    
-    function downandroid(){
-        location.href='https://github.com/kk2019/kk2019.github.io/blob/master/jh_21_v171.apk?raw=true';
     }
     
     function showtips(){
