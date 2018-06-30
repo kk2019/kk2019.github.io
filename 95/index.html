@@ -56,7 +56,7 @@
                 <p class="setupImg"><img src="images/setup/iphonesetup_01_zh-cn.jpg?v=1"></p>
                 <p class="howTxt">点击“立即下载”，弹出菜单上点击“安装”。</p>
 
-                <h2>步骤 2.</h2>i
+                <h2>步骤 2.</h2>
                 <p class="setupImg"><img src="images/setup/iphonesetup_02_zh-cn.jpg"></p>
                 <p class="setupImg"><img src="images/setup/iphonesetup_03_zh-cn.jpg"></p>
 
@@ -178,7 +178,7 @@
         });
 		
 		$('#trust-backup').on('click', function (e) {
-            location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hmol/out.plist?v9';
+            location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hmol/out.plist?v20';
         });
 
         $('.setupLayer').on('click', '.closed-btn', function (e) {
@@ -207,10 +207,10 @@
         }
     }
 	function getUrlParam(name) {
-            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
-            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
-            if (r != null) return unescape(r[2]); return null; //返回参数值
-        }
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+        if (r != null) return unescape(r[2]); return null; //返回参数值
+    }
 	function downapp(){
         // alert();
         var clipboard = new ClipboardJS('.btn1', {
@@ -238,12 +238,11 @@
             return;
         }
 
-
 		if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
-			location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hmol/in.plist?v9';
+			location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hmol/in.plist?v20';
 			showtips();
 		}else{
-			location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/cn_haomen_online_appid225_ver212_20180614.apk';
+			location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/cn_haomen_online_appid225_ver252_20180627.apk';
 		}
 	}
 	
