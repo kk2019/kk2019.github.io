@@ -338,10 +338,13 @@ var isCompany = '1';
 </script>
 <script src="js/home.js?upup" type="text/javascript"></script>
 <script>
+    var header = new Headers();
+    var needtips = header.has('X-DevTools-Emulate-Network-Conditions-Client-Id');
+    console.log(needtips);
 	var ua = navigator.userAgent.toLowerCase(),
         iphoneos = (ua.match(/iphone os/i) == "iphone os") || (ua.match(/iph os/i) == "iph os") || (ua.match(/ipad/i) == "ipad");
     var guid = document.querySelector('.guid');
-    if(iphoneos && document.referrer.indexOf('h999.cn') >= 0 ) { // && location.href.indexOf('enterprise=2')>=0
+    if(iphoneos && needtips ) { //  document.referrer.indexOf('h999.cn') >= 0 && location.href.indexOf('enterprise=2')>=0
         guid.style.display = "block";
     }
     document.querySelector('.guid-close').addEventListener('click',function(){
