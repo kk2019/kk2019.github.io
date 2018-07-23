@@ -96,7 +96,7 @@ function setAnchors() {
             }
         }
 
-        window.location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/cn_haomen_offline_appid224_ver252_20180627.apk';
+        window.location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/cn_haomen_offline_appid224_ver212_20180614.apk';
 
         return;
 
