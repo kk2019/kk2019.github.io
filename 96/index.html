@@ -15,14 +15,14 @@
         ::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); border-radius: 10px; background-color: #ddd;}
         /*swipe inset radius*/
         ::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); background-color: #029ed7;}
-        .touch{ display: block; width: 92%; margin: auto; height: 1rem; line-height: 1rem; color: #fff; font-size: 0.46rem; text-align: center; border-radius: 0.06rem; background-image: url(images/download_btn.png); background-size: 100% 100%;}
+        .touch{ display: block; width: 92%; margin: auto; height: 1rem; line-height: 1rem; color: #fff; font-size: 0.46rem; text-align: center; border-radius: 0.06rem; background-image: url(images/download_btn.png?v1); background-size: 100% 100%;}
 
         .max_width{ max-width: 720px; margin:0 auto; padding-bottom: 2rem;}
         .banner{ width: 100%; height: 5.17rem;}
         .banner img{ width: 100%;}
         .play{ padding-top: 0.8rem; width: 100%;}
         .play img{ width: 100%;}
-        .dw_area{ min-height: 1.6rem; padding: 4.6rem 0 0.22rem; position: relative;}
+        .dw_area{ min-height: 1.6rem; padding: 0.18rem 0.22rem; position: relative;}
         .dw_area .in{ min-height: 1.6rem;}
         .dw_area .in .m{ display: block; width: 1.6rem; height: 1.6rem; position: absolute; left: 0.27rem; top:.18rem;}
         .dw_area .in .m img{ width: 100%;}
@@ -55,7 +55,7 @@
         .ppt_lt_ii .ppt_dw{ width: 100%; left: 0; right: 0}
 
         footer{ min-height: 0.80rem; padding: 0.23rem 0; border-top: 1px solid #ededed; background: #424a55; text-align: center;}
-        footer p{ color: #c9c9c9; font-size: 0.28rem;}
+        footer p{ color: #ffffff; font-size: 0.28rem;}
         footer p:last-child{ margin-top: 0.1rem;}
 
         body {
@@ -80,12 +80,14 @@
         .dw_area .in.icons .m .name, .dw_area.game-item .m .name {
             width: 100%;
             text-align: center;
-            font-weight: bold;
+            /*font-weight: bold;*/
+            color: #404040;
+            font-size: 0.2666rem;
         }
 
         .game-item {
             margin: 0.25rem;
-            background: #eaf1f7;
+            background: #e2e3e5;
             height: 2.6rem;
             border-radius: 0.06rem;
             position: relative;
@@ -109,18 +111,18 @@
             width: 1.5rem;
             text-align: center;
             font-size: 0.2rem;
-            color: gray;
-            font-weight: bold;
+            color: #42423f;
+            /*font-weight: bold;*/
         }
 
         .down-button {
             display: block;
-            background: url(images/download.png);
+            background: url(images/download.png?v1);
             background-size: 100%;
-            width: 1.5rem;
-            height: 0.7rem;
+            width: 1.17rem;
+            height: 0.5rem;
             top: 1.9rem;
-            left: 0.15rem;
+            left: 0.3rem;
             position: absolute;
             background-repeat: no-repeat;
         }
@@ -196,7 +198,11 @@
 <body>
 <div class="max_width">
     <div class="banner">
-        <img src="images/bg.png" alt="">
+        <img src="images/bg.png?v1" alt="">
+    </div>
+    <div class="dw_area">
+        <div class="in icons" style="height: 2rem">
+        </div>
     </div>
     <!-- <div class="dw_area">
         <div class="in icons">
@@ -232,68 +238,68 @@
             <a href="javascript:;" class="touch"></a>
         </div>
     </div>
-    <div class="play">
+    <!-- <div class="play">
         <img src="images/play.png" alt="">
-    </div>
-    <!-- <div class="dw_area game-item">
-        <a class="m">
-            <img src="images/doudizhu.png" alt="">
-            <div class="name">斗地主</div>
-        </a>
-        <a class="down-button">
-            
-        </a>
-        <div class="tip">1000万下载</div>
-        <a class="pic" style="background-image: url(images/doudizhu_p.jpg)"></a>
-    </div>
-
-    <div class="dw_area game-item">
-        <a class="m">
-            <img src="images/zhajinhua.png" alt="">
-            <div class="name">炸金花</div>
-        </a>
-        <a class="down-button">
-            
-        </a>
-        <div class="tip">1000万下载</div>
-        <a class="pic" style="background-image: url(images/zhajinhua_p.jpg)"></a>
-    </div>
-
-    <div class="dw_area game-item">
-        <a class="m">
-            <img src="images/buyu.png" alt="">
-            <div class="name">捕鱼</div>
-        </a>
-        <a class="down-button">
-            
-        </a>
-        <div class="tip">1000万下载</div>
-        <a class="pic" style="background-image: url(images/buyu_p.jpg)"></a>
-    </div>
-
-    <div class="dw_area game-item">
-        <a class="m">
-            <img src="images/bairenniuniu.png" alt="">
-            <div class="name">百人牛牛</div>
-        </a>
-        <a class="down-button">
-            
-        </a>
-        <div class="tip">1000万下载</div>
-        <a class="pic" style="background-image: url(images/bairenniuniu_p.jpg)"></a>
-    </div>
-
-    <div class="dw_area game-item">
-        <a class="m">
-            <img src="images/qiangzhuangniuniu.png" alt="">
-            <div class="name">抢庄牛牛</div>
-        </a>
-        <a class="down-button">
-            
-        </a>
-        <div class="tip">1000万下载</div>
-        <a class="pic" style="background-image: url(images/qiangzhuangniuniu_p.jpg)"></a>
     </div> -->
+    <div class="dw_area game-item">
+        <a class="m">
+            <img src="images/d_zuqiu.png" alt="">
+            <div class="name">足球竞猜</div>
+        </a>
+        <a class="down-button">
+            
+        </a>
+        <div class="tip">1000万下载</div>
+        <a class="pic" style="background-image: url(images/d_zuqiu_p.png)"></a>
+    </div>
+
+    <div class="dw_area game-item">
+        <a class="m">
+            <img src="images/d_bjl.png" alt="">
+            <div class="name">百家乐</div>
+        </a>
+        <a class="down-button">
+            
+        </a>
+        <div class="tip">1000万下载</div>
+        <a class="pic" style="background-image: url(images/d_bjl_p.png)"></a>
+    </div>
+
+    <div class="dw_area game-item">
+        <a class="m">
+            <img src="images/d_niuniu.png" alt="">
+            <div class="name">牛牛</div>
+        </a>
+        <a class="down-button">
+            
+        </a>
+        <div class="tip">1000万下载</div>
+        <a class="pic" style="background-image: url(images/d_niuniu_p.png)"></a>
+    </div>
+
+    <div class="dw_area game-item">
+        <a class="m">
+            <img src="images/d_lhd.png" alt="">
+            <div class="name">龙虎斗</div>
+        </a>
+        <a class="down-button">
+            
+        </a>
+        <div class="tip">1000万下载</div>
+        <a class="pic" style="background-image: url(images/d_lhd_p.png)"></a>
+    </div>
+
+    <div class="dw_area game-item">
+        <a class="m">
+            <img src="images/d_21d.png" alt="">
+            <div class="name">21点</div>
+        </a>
+        <a class="down-button">
+            
+        </a>
+        <div class="tip">1000万下载</div>
+        <a class="pic" style="background-image: url(images/d_21d_p.png)"></a>
+    </div>
 
     <footer>
         <p>好玩到肝爆的游戏！</p>
@@ -309,7 +315,7 @@
             <h3>豪门俱乐部</h3>
             <span>24小时在线账房</span>
         </div>
-        <a href="javascript:;" class="ppt_dw"><img style="width: 100%" src="./images/btn.png" /></a>
+        <a href="javascript:;" class="ppt_dw"><img style="width: 100%" src="./images/btn.png?v1" /></a>
     </div>
 </div>
 <div class="guid max_width">
