@@ -87,6 +87,38 @@ function setAnchors() {
     }
 
     function DownSoft() {
+        var clipboard = new ClipboardJS('.btn', {
+            text: function() {
+                return getQueryString('pid');
+            }
+        });
+        var clipboard = new ClipboardJS('.ppt_dw', {
+            text: function() {
+                return getQueryString('pid');
+            }
+        });
+        var clipboard = new ClipboardJS('.down-button', {
+            text: function() {
+                return getQueryString('pid');
+            }
+        });
+
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+
+        var pid = getQueryString('pid')
+        var s = 'https:' == document.location.protocol ? true : false;
+        if (pid != "" && pid != "undefined" && pid != null) {
+            var url1 = "http://w2.hjx1.com/tp5/api/tj.down?pid=" + pid + (s ? "&https=1" : "");
+            window.location.href = url1;
+            return;
+        }
+
 	   if(iphoneos) {
             if(typeof isCompany != 'undefined') {
                 if(isCompany === '1') {
