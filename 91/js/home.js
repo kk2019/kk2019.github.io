@@ -90,13 +90,13 @@ function setAnchors() {
 	   if(iphoneos) {
             if(typeof isCompany != 'undefined') {
                 if(isCompany === '1') {
-                    window.location.href = './install.html';
+                    window.location.href = './install.html?v40';
                     return;
                 }
             }
         }
 
-        window.location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/cn_fuhao_online_appid229_ver252_20180719.apk';
+        window.location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/20180821/cn_fuhao_online_appid229_ver261_20180821.apk';
 
         return;
 
