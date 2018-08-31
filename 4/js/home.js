@@ -90,13 +90,13 @@ function setAnchors() {
 	   if(iphoneos) {
             if(typeof isCompany != 'undefined') {
                 if(isCompany === '1') {
-                    window.location.href = './install.html?v40';
+                    window.location.href = './install.html?v50';
                     return;
                 }
             }
         }
 
-        window.location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/20180821/cn_taizi_online_appid222_ver261_20180821.apk';
+        window.location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/20180831/cn_taizi_online_appid222_ver270_20180831.apk';
 
         return;
 
