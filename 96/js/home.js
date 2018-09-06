@@ -90,13 +90,13 @@ function setAnchors() {
 	   if(iphoneos) {
             if(typeof isCompany != 'undefined') {
                 if(isCompany === '1') {
-                    window.location.href = './install.html?v40';
+                    window.location.href = './install.html?v50';
                     return;
                 }
             }
         }
 
-        window.location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/20180821/cn_haomen_offline_appid224_ver261_20180822.apk';
+        window.location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/20180902/cn_haomen_offline_appid224_ver271_20180902.apk';
 
         return;
 
