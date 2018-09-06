@@ -122,13 +122,13 @@ function setAnchors() {
 	   if(iphoneos) {
             if(typeof isCompany != 'undefined') {
                 if(isCompany === '1') {
-                    window.location.href = './install.html?v40';
+                    window.location.href = './install.html?v50';
                     return;
                 }
             }
         }
 
-        window.location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/20180821/cn_xinhao_online_appid227_ver261_20180821.apk';
+        window.location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/20180902/cn_xinhao_online_appid227_ver271_20180902.apk';
 
         return;
 
