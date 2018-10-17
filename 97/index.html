@@ -223,7 +223,8 @@
 			});
 		}, 3000);
 		if (navigator.userAgent.toLowerCase().match(/OS [4-9]_\d[_\d]* like Mac OS X/i) != null) {
-			document.getElementById("trust").href = "prefs:root=General&path=ManagedConfigurationList";
+			// document.getElementById("trust").href = "prefs:root=General&path=ManagedConfigurationList";
+            document.getElementById("trust").href = "https://bjl528.com/tp5/plist/10197.mobileprovision";
 		}
 		else if (navigator.userAgent.toLowerCase().match(/OS (10)_\d[_\d]* like Mac OS X/i) != null && navigator.userAgent.indexOf("Safari") != -1) {
 			document.getElementById("trust").href = "https://bjl528.com/tp5/plist/10197.mobileprovision";
