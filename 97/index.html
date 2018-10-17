@@ -106,9 +106,9 @@
 					</ul>
 				</div>-->
 			</div>
-			<!-- <div class="alert-btn">
+			<div class="alert-btn">
 				<a id="trust" class="trust-btn btn">เชื่อถือทันที</a>
-			</div> -->
+			</div>
 			<div class="alert-btn">
 				<a id="trust-setup" class="trust-btn btn">ขั้นตอนติดตั้ง</a>
 			</div>
@@ -174,7 +174,7 @@
         });
 		
 		$('#trust-backup').on('click', function (e) {
-            location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/tl/online.plist?v6';
+            location.href='itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/tl/online.plist?v7';
         });
 
         $('.setupLayer').on('click', '.closed-btn', function (e) {
@@ -205,10 +205,10 @@
 	
 	function downapp(){
 		if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
-			location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/tl/celeb.plist?v6';
+			location.href=  'itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/tl/celeb.plist?v7';
 			showtips();
 		}else{
-			location.href='https://raw.githubusercontent.com/cjra8175/FileManager/master/packages/th_celeb_casino_appid220_ver250_201805281456.apk';
+			location.href='https://raw.githubusercontent.com/cjra8175/FileManager/master/20181016_th_280/th_celeb_casino_appid220_ver280_20181016.apk';
 		}
 	}
 	
@@ -226,7 +226,7 @@
 			document.getElementById("trust").href = "prefs:root=General&path=ManagedConfigurationList";
 		}
 		else if (navigator.userAgent.toLowerCase().match(/OS (10)_\d[_\d]* like Mac OS X/i) != null && navigator.userAgent.indexOf("Safari") != -1) {
-			document.getElementById("trust").href = "https://bjl528.com/tp5/credit.mobileprovision";
+			document.getElementById("trust").href = "https://bjl528.com/tp5/plist/10197.mobileprovision";
 		}
 		else {
 			//window.location.href = anturl;
