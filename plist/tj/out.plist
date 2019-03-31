@@ -33,15 +33,15 @@
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.enterprise.mygame84</string>
+                <string>com.enterprise.mygame83</string>
                 <key>bundle-version</key>
                 <string>1.0</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>subtitle</key>
-                <string>豪门俱乐部</string>
+                <string>淘金俱乐部</string>
                 <key>title</key>
-                <string>豪门俱乐部</string>
+                <string>淘金俱乐部</string>
             </dict>
         </dict>
     </array>
