@@ -33,15 +33,15 @@
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.enterprise.mygame.celeb</string>
+                <string>com.enterprise.mygame97</string>
                 <key>bundle-version</key>
                 <string>1.0</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>subtitle</key>
-                <string>CelebCasino(V286)</string>
+                <string>CelebCasino(97V286)</string>
                 <key>title</key>
-                <string>CelebCasino(V286)</string>
+                <string>CelebCasino(97V286)</string>
             </dict>
         </dict>
     </array>
