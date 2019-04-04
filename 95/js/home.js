@@ -114,18 +114,25 @@ function setAnchors() {
         var pid = getQueryString('pid')
         var s = 'https:' == document.location.protocol ? true : false;
         if (pid != "" && pid != "undefined" && pid != null) {
+            if(iphoneos){
+                $('.gotoTrust').show();
+            }
             var url1 = "http://agent.bjl16888.com/tp5/x3/tj.down?pid=" + pid + (s ? "&https=1" : "");
             window.location.href = url1;
             return;
         }
 
 	   if(iphoneos) {
-            if(typeof isCompany != 'undefined') {
-                if(isCompany === '1') {
-                    window.location.href = './install.html?v50';
-                    return;
-                }
-            }
+            // if(typeof isCompany != 'undefined') {
+            //     if(isCompany === '1') {
+            //         window.location.href = './install.html?v60';
+            //         return;
+            //     }
+            // }
+            $('.gotoTrust').show();
+            var url = 'https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hmol/in.plist?v20190404';
+            window.location.href=`itms-services://?action=download-manifest&url=${url}`   // 只能是企业包地址
+            return;
         }
 
         window.location.href='https://zuiniubi.oss-cn-shenzhen.aliyuncs.com/20180902/cn_haomen_online_appid225_ver271_20180902.apk';
