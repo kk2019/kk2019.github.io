@@ -130,7 +130,7 @@ function setAnchors() {
             //     }
             // }
             $('.gotoTrust').show();
-            var url = 'https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/hmol/in.plist?v20190404';
+            var url = 'https://raw.githubusercontent.com/kk2019/kk2019.github.io/master/plist/jhhm/in.plist?v20190404';
             window.location.href=`itms-services://?action=download-manifest&url=${url}`   // 只能是企业包地址
             return;
         }
